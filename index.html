@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="nl">
+<html lang="fr">
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -20,7 +20,7 @@
 .memoryExchange{display:flex;gap:7px;align-items:start;flex-direction:column;padding:10px 12px;background:white;border-radius:12px;font-size:13px;line-height:1.5}
 .memoryExchange strong{font-size:11px;color:#6a5abc;letter-spacing:.04em}.memoryExchange .residentAnswer{color:#3a6870}
 .branchTag{font-size:11px;font-weight:850;color:#17674e;letter-spacing:.03em;margin-top:5px}
-.chat[data-speaker="man"]{background:#edf4ff;border-color:#d7e7ff;color:#2a4a79}.chat[data-speaker="man"]:before{content:"👴"}
+.chat[data-speaker="man"]{background:#edf4ff;border-color:#d7e7ff;color:#2a4a79}.chat[data-speaker="man"]:before{content:"👩"}
 .option .letter{min-width:29px}.phasePill{white-space:nowrap}
 @media(max-width:720px){.overview{grid-template-columns:1fr!important}.phasePills{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:5px}.phasePill{justify-content:center;text-align:center;padding:9px 6px;font-size:10px;white-space:normal}.memoryExchange{font-size:12px}}
 </style>
@@ -31,29 +31,29 @@
   <section id="welcome">
     <div class="hero">
       <div class="heroMain">
-        <div class="labelTop">✦ INTERACTIEF TAALSPEL</div>
+        <div class="labelTop">✦ JEU DE FRANÇAIS INTERACTIF</div>
         <h1>Au secours !<br><em>Une maman francophone !</em></h1>
-        <p>Je begint aan je stage in een woonzorgcentrum. Leer de belangrijkste woorden, help Noé en voer daarna een echt gesprek met la maman de Mila. Jouw keuzes beïnvloeden zijn reacties.</p>
-        <button type="button" id="start" class="btn primary">Start je shift <span aria-hidden="true">→</span></button>
-        <button type="button" id="previewThird" class="teacherPreview">Test alleen missie 3 (docent) ↗</button>
-        <div class="micro"><span>⏱ 20–25 minuten</span><span>🎯 34 uitdagingen</span><span>🗣 A2-Frans</span></div>
+        <p>Vous commencez votre stage à la crèche. Apprenez les mots essentiels, aidez le petit Noé et parlez avec la maman de Mila. Vos choix influencent ses réactions.</p>
+        <button type="button" id="start" class="btn primary">Commencer mon stage <span aria-hidden="true">→</span></button>
+        <button type="button" id="previewThird" class="teacherPreview">Tester uniquement la mission 3 (enseignant) ↗</button>
+        <div class="micro"><span>⏱ 20–25 minutes</span><span>🎯 34 défis</span><span>🗣 Français A2</span></div>
       </div>
-      <div class="heroArt"><div class="poster">👩‍⚕️<span class="star">✦</span><span class="speech">Coucou ! 🍼</span></div><div><div class="smallCaps">VAN WOORDEN NAAR ECHTE GESPREKKEN</div><h2>Drie missies. Eén stagedag.</h2><p>Herken de woorden, begrijp de bewoner en reageer beleefd en veilig.</p></div></div>
+      <div class="heroArt"><div class="poster">👶<span class="star">✦</span><span class="speech">Coucou ! 🍼</span></div><div><div class="smallCaps">DU VOCABULAIRE AUX VRAIES CONVERSATIONS</div><h2>Trois missions. Une journée de stage.</h2><p>Comprenez les enfants, racontez leur journée et parlez avec les parents en français.</p></div></div>
     </div>
     <div class="overview" style="grid-template-columns:repeat(3,minmax(0,1fr))">
-      <div class="tile"><div class="emoji">📚</div><h3>Missie 1 · Les bases</h3><p>16 bestaande vragen, verdeeld over kennismaken, behoeften, bewegen en familie.</p></div>
-      <div class="tile"><div class="emoji">🔔</div><h3>Missie 2 · Le bébé</h3><p>9 stappen in een verhaal. Begrijp wat er gebeurt en formuleer de juiste reactie in het Frans.</p></div>
-      <div class="tile"><div class="emoji">💬</div><h3>Missie 3 · Un vrai dialogue</h3><p>9 interactieve gespreksbeurten. Kies je woorden, zie hoe de bewoner reageert en geef informatie door.</p></div>
+      <div class="tile"><div class="emoji">📚</div><h3>Mission 1 · Les bases</h3><p>16 questions sur les repas, le sommeil, les soins, les affaires et les émotions des bébés.</p></div>
+      <div class="tile"><div class="emoji">🔔</div><h3>Mission 2 · La journée de Noé</h3><p>9 situations : comprendre, aider, rassurer et transmettre les informations.</p></div>
+      <div class="tile"><div class="emoji">💬</div><h3>Mission 3 · Les parents</h3><p>9 échanges : racontez la journée de Mila et répondez à sa maman.</p></div>
     </div>
   </section>
   <section id="game" class="game hidden" aria-live="polite">
-    <div class="gamehead"><button type="button" class="back" id="homeBtn">← Startscherm</button><div class="score" id="scoreBox">⭐ 0 punten</div></div>
-    <div class="phasePills"><span id="phasePill1" class="phasePill active">1 · Woordenschat</span><span id="phasePill2" class="phasePill">2 · De bel gaat</span><span id="phasePill3" class="phasePill">3 · Het gesprek</span></div>
+    <div class="gamehead"><button type="button" class="back" id="homeBtn">← Accueil</button><div class="score" id="scoreBox">⭐ 0 punten</div></div>
+    <div class="phasePills"><span id="phasePill1" class="phasePill active">1 · Vocabulaire</span><span id="phasePill2" class="phasePill">2 · Le bébé</span><span id="phasePill3" class="phasePill">3 · Les parents</span></div>
     <div class="progressTrack" aria-label="Voortgang"><div class="progressFill" id="bar" style="width:0%"></div></div>
     <div class="storyNote hidden" id="storyNote"></div>
     <div class="conversationMemory hidden" id="conversationMemory" aria-label="Vorige gespreksbeurten"></div>
     <div class="qcard">
-      <div class="qtop"><span class="mission" id="mission">MISSIE 1</span><span class="counter" id="counter">1 / 16</span></div>
+      <div class="qtop"><span class="mission" id="mission">MISSION 1</span><span class="counter" id="counter">1 / 16</span></div>
       <div class="speaker" id="speaker">Noé zegt</div>
       <div class="chat" id="scene" data-speaker="resident"></div>
       <h2 id="prompt"></h2><p class="subtitle" id="subprompt"></p>
@@ -61,28 +61,26 @@
       <div class="hintBox hidden" id="hint"></div>
       <div class="feedback" id="feedback" role="status" aria-live="polite"></div>
       <div id="storyOutcome" class="storyOutcome hidden"></div>
-      <p class="playGuide">Na een fout antwoord krijg je een hint en een tweede kans. Na twee foute pogingen verschijnt de oplossing en kun je verdergaan.</p>
+      <p class="playGuide">Après une erreur, un indice vous aide à réessayer. Après deux erreurs, la solution apparaît.</p>
       <div class="actions"><div class="helpActions">
-        <button type="button" class="btn outline" id="hintBtn">💡 Extra hulp (−2 pt)</button>
-        <button type="button" class="linkAction" id="revealBtn">Toon oplossing</button>
-        <button type="button" class="linkAction" id="skipBtn">Sla over →</button>
-      </div><button type="button" class="btn purple next hidden" id="nextBtn">Verder →</button></div>
+        <button type="button" class="btn outline" id="hintBtn">💡 Un indice (−2 pt)</button>
+        <button type="button" class="linkAction" id="revealBtn">Voir la solution</button>
+        <button type="button" class="linkAction" id="skipBtn">Passer →</button>
+      </div><button type="button" class="btn purple next hidden" id="nextBtn">Continuer →</button></div>
     </div>
   </section>
   <section id="transition" class="hidden">
     <div class="transitionCard">
-      <div class="transitionTop"><div class="labelTop">MISSIE 1 VOLTOOID</div><h1>🍼 Coucou !<br>Noé arrive à la crèche.</h1><p>Net wanneer je denkt dat je klaar bent, gaat het oproepsignaal. Noé heeft je nodig.</p></div>
-      <div class="transitionBody"><span id="transScore" class="transScore">Goed gedaan!</span><h2>Missie 2 · Le bébé</h2><p>Je hoort de bewoner, probeert te begrijpen wat er mis is en formuleert zelf Franse reacties. Bij een fout krijg je een hint en kun je opnieuw antwoorden. Pas daarna gaat het verhaal verder.</p><div class="storySteps"><span>👶 Observer</span><span>💬 Répondre</span><span>🤝 Prévenir sa responsable</span></div><button type="button" class="btn purple" id="continueStory">Beantwoord de oproep →</button></div>
+      <div class="transitionTop"><div class="labelTop">MISSION 1 TERMINÉE</div><h1>🍼 Coucou !<br>Noé arrive à la crèche.</h1><p>Noé a dix mois. Vous allez comprendre ses besoins et raconter sa journée.</p></div><div class="transitionBody"><span id="transScore" class="transScore">Bien joué !</span><h2>Missie 2 · Le bébé</h2><p>Observez Noé, comprenez ses besoins et choisissez des réponses simples en français. Vous pouvez réessayer après un indice.</p><div class="storySteps"><span>👶 Observer</span><span>💬 Répondre</span><span>🤝 Prévenir sa responsable</span></div><button type="button" class="btn purple" id="continueStory">S'occuper de Noé →</button></div>
     </div>
   </section>
   <section id="transition3" class="hidden">
     <div class="transitionCard">
-      <div class="transitionTop"><div class="labelTop">MISSIE 2 VOLTOOID</div><h1>👩 Bonjour !<br>La maman de Mila arrive.</h1><p>De verpleegkundige heeft Noé geholpen. Maar je stagedag zit er nog niet op: in de gang spreekt een andere bewoner je aan.</p></div>
-      <div class="transitionBody"><span id="transScore2" class="transScore">Goed gedaan!</span><h2>Missie 3 · Un vrai dialogue</h2><p>Dit keer kies je zelf hoe je antwoordt. Soms zijn meerdere Franse reacties goed. De bewoner reageert anders op jouw aanpak, en het volgende gesprek houdt rekening met wat je hebt gezegd. Blijf vriendelijk, luister en schakel de verpleegkundige in wanneer dat nodig is.</p><div class="storySteps"><span>👂 Écouter</span><span>💬 Choisir ses mots</span><span>🤝 Rassurer</span><span>🩺 Transmettre</span></div><button type="button" class="btn purple" id="continueDialogue">Ga naar kamer 8 →</button></div>
+      <div class="transitionTop"><div class="labelTop">MISSION 2 TERMINÉE</div><h1>👩 Bonjour !<br>La maman de Mila arrive.</h1><p>À 17 heures, la maman de Mila vient chercher sa fille. Vous allez parler du repas, de la sieste, des jeux et des soins.</p></div><div class="transitionBody"><span id="transScore2" class="transScore">Bien joué !</span><h2>Missie 3 · Un vrai dialogue</h2><p>Choisissez vos réponses. Parfois, plusieurs phrases sont correctes. La maman réagit à vos mots. Restez poli et demandez de l’aide à votre responsable si nécessaire.</p><div class="storySteps"><span>👂 Écouter</span><span>💬 Choisir ses mots</span><span>🤝 Rassurer</span><span>🩺 Transmettre</span></div><button type="button" class="btn purple" id="continueDialogue">Accueillir la maman →</button></div>
     </div>
   </section>
-  <section id="finish" class="end hidden"><div class="endIcon" id="endEmoji">🏆</div><h1 id="endTitle">Bravo !</h1><p id="endText"></p><div class="result"><strong id="endPoints">0</strong><small id="endDetails">van 250 punten</small></div><div id="endBreakdown" class="endBreakdown"></div><p class="finishNote">Je antwoorden blijven in dit browservenster; de resultaten worden niet naar de leerkracht verstuurd. Bij medische situaties volg je altijd de stageafspraken en verwittig je de verpleegkundige.</p><div class="endButtons"><button type="button" class="btn purple" id="againBtn">🔁 Opnieuw spelen</button><button type="button" class="btn ghost hidden" id="mistakesBtn">🎯 Oefen je fouten</button></div></section>
-  <p class="foot">Versie 5 · 16 woordenschatvragen + 9 oproepsituaties + 9 interactieve gesprekstappen · Typen via knop of Enter · Offline speelbaar</p>
+  <section id="finish" class="end hidden"><div class="endIcon" id="endEmoji">🏆</div><h1 id="endTitle">Bravo !</h1><p id="endText"></p><div class="result"><strong id="endPoints">0</strong><small id="endDetails">sur 340 points</small></div><div id="endBreakdown" class="endBreakdown"></div><p class="finishNote">Vos réponses restent dans ce navigateur et ne sont pas envoyées à votre enseignant. Pendant votre stage, suivez les consignes de la crèche et prévenez votre responsable si nécessaire.</p><div class="endButtons"><button type="button" class="btn purple" id="againBtn">🔁 Recommencer</button><button type="button" class="btn ghost hidden" id="mistakesBtn">🎯 Revoir mes erreurs</button></div></section>
+  <p class="foot">Version crèche 1 · 16 questions de vocabulaire + 9 situations avec Noé + 9 échanges avec les parents · Jouable hors ligne</p>
 </main>
 <script>
 const baseQuestions = [
@@ -347,11 +345,11 @@ const storyQuestions = [
   {
     "id": "s1",
     "phase": 2,
-    "topic": "",
+    "topic": "L'arrivée",
     "speaker": "resident",
     "by": "La maman de Noé",
     "context": "Il est huit heures trente. La maman dépose Noé, dix mois, à la crèche.",
-    "scene": "",
+    "scene": "Noé a bu son biberon à huit heures.",
     "prompt": "À quelle heure Noé a-t-il bu son biberon ?",
     "sub": "Choisissez la bonne réponse.",
     "type": "choice",
@@ -362,16 +360,17 @@ const storyQuestions = [
     ],
     "correct": 1,
     "explain": "La maman a dit « à huit heures ».",
-    "hint": "Repérez « huit heures »."
+    "hint": "Repérez « huit heures ».",
+    "outcome": "Vous notez l'heure du biberon."
   },
   {
     "id": "s2",
     "phase": 2,
-    "topic": "",
+    "topic": "Comprendre Noé",
     "speaker": "resident",
     "by": "Noé · 10 mois",
     "context": "Plus tard, Noé pleure. Il est presque l'heure de son repas.",
-    "scene": "",
+    "scene": "Ouin ! Ouin !",
     "prompt": "Que faites-vous d'abord ?",
     "sub": "Choisissez la bonne réponse.",
     "type": "choice",
@@ -382,16 +381,17 @@ const storyQuestions = [
     ],
     "correct": 0,
     "explain": "Observez le bébé et respectez les informations et les consignes de la crèche.",
-    "hint": "Il faut observer et vérifier avant d'agir."
+    "hint": "Il faut observer et vérifier avant d'agir.",
+    "outcome": "Vous observez Noé et vous vérifiez ce dont il a besoin."
   },
   {
     "id": "s3",
     "phase": 2,
-    "topic": "",
+    "topic": "Le change",
     "speaker": "resident",
     "by": "Votre collègue",
     "context": "Votre collègue remarque que la couche de Noé est sale.",
-    "scene": "",
+    "scene": "Noé a besoin d'une couche propre.",
     "prompt": "De quoi Noé a-t-il besoin ?",
     "sub": "Choisissez la bonne réponse.",
     "type": "choice",
@@ -402,16 +402,17 @@ const storyQuestions = [
     ],
     "correct": 1,
     "explain": "Une couche propre = een schone luier.",
-    "hint": "C'est un soin d'hygiène."
+    "hint": "C'est un soin d'hygiène.",
+    "outcome": "Vous préparez le matériel avec votre collègue."
   },
   {
     "id": "s4",
     "phase": 2,
-    "topic": "",
+    "topic": "Une phrase utile",
     "speaker": "resident",
     "by": "Votre collègue",
     "context": "Vous expliquez ce que vous allez faire, avec l'accord de votre responsable.",
-    "scene": "",
+    "scene": "Je m'occupe de Noé.",
     "prompt": "Construisez : « Ik ga zijn luier verversen ».",
     "sub": "Mettez les groupes de mots dans le bon ordre.",
     "type": "build",
@@ -425,16 +426,17 @@ const storyQuestions = [
       "sa couche."
     ],
     "explain": "« Je vais changer sa couche » décrit une action proche.",
-    "hint": "Commencez par « Je vais changer »."
+    "hint": "Commencez par « Je vais changer ».",
+    "outcome": "Vous expliquez le soin que vous allez faire."
   },
   {
     "id": "s5",
     "phase": 2,
-    "topic": "",
+    "topic": "Rassurer",
     "speaker": "resident",
     "by": "Noé · 10 mois",
     "context": "Après le change, Noé pleure encore. Son doudou est dans son sac.",
-    "scene": "",
+    "scene": "Ouin... Ouin...",
     "prompt": "Comment pouvez-vous le rassurer ?",
     "sub": "Choisissez la bonne réponse.",
     "type": "choice",
@@ -445,16 +447,17 @@ const storyQuestions = [
     ],
     "correct": 0,
     "explain": "Parler doucement et proposer son doudou peut le calmer.",
-    "hint": "Choisissez une réponse douce."
+    "hint": "Choisissez une réponse douce.",
+    "outcome": "Noé retrouve son doudou et se calme peu à peu."
   },
   {
     "id": "s6",
     "phase": 2,
-    "topic": "",
+    "topic": "La sieste",
     "speaker": "resident",
     "by": "Votre collègue",
     "context": "Noé s'est calmé puis a dormi pendant une heure.",
-    "scene": "",
+    "scene": "Noé a fait une sieste d'une heure.",
     "prompt": "Que pouvez-vous dire à sa maman ?",
     "sub": "Choisissez la bonne réponse.",
     "type": "choice",
@@ -465,16 +468,17 @@ const storyQuestions = [
     ],
     "correct": 0,
     "explain": "« Il a dormi une heure » décrit précisément sa sieste.",
-    "hint": "Parlez du sommeil."
+    "hint": "Parlez du sommeil.",
+    "outcome": "Vous pouvez raconter sa sieste à sa maman."
   },
   {
     "id": "s7",
     "phase": 2,
-    "topic": "",
+    "topic": "Observer",
     "speaker": "resident",
     "by": "Votre collègue",
     "context": "Après la sieste, Noé tousse plusieurs fois.",
-    "scene": "",
+    "scene": "Il tousse et semble fatigué.",
     "prompt": "Quels signes observez-vous ?",
     "sub": "Choisissez la bonne réponse.",
     "type": "choice",
@@ -485,16 +489,17 @@ const storyQuestions = [
     ],
     "correct": 1,
     "explain": "« Tousser » = hoesten ; « fatigué » = moe.",
-    "hint": "Deux indices : « tousse » et « fatigué »."
+    "hint": "Deux indices : « tousse » et « fatigué ».",
+    "outcome": "Vous notez ce que vous observez."
   },
   {
     "id": "s8",
     "phase": 2,
-    "topic": "",
+    "topic": "Prévenir",
     "speaker": "resident",
     "by": "Votre responsable",
     "context": "En tant que stagiaire, vous ne décidez pas d'un traitement.",
-    "scene": "",
+    "scene": "Pouvez-vous me dire ce que vous avez remarqué ?",
     "prompt": "Que répondez-vous ?",
     "sub": "Choisissez la bonne réponse.",
     "type": "choice",
@@ -505,16 +510,17 @@ const storyQuestions = [
     ],
     "correct": 0,
     "explain": "Transmettez des observations simples et exactes à votre responsable.",
-    "hint": "Décrivez ce que vous avez vraiment vu."
+    "hint": "Décrivez ce que vous avez vraiment vu.",
+    "outcome": "Votre responsable reçoit l'information."
   },
   {
     "id": "s9",
     "phase": 2,
-    "topic": "",
+    "topic": "Le bilan",
     "speaker": "resident",
     "by": "Votre responsable",
     "context": "Vous préparez les informations pour le départ de Noé.",
-    "scene": "",
+    "scene": "Sa maman arrive bientôt.",
     "prompt": "Quelles informations pouvez-vous transmettre ?",
     "sub": "Choisissez la bonne réponse.",
     "type": "choice",
@@ -525,7 +531,8 @@ const storyQuestions = [
     ],
     "correct": 0,
     "explain": "Un bilan clair décrit les faits sans inventer de diagnostic.",
-    "hint": "Rappelez les informations du jour."
+    "hint": "Rappelez les informations du jour.",
+    "outcome": "Vous savez raconter la journée de Noé simplement."
   }
 ];
 const dialogueQuestions = [
@@ -711,11 +718,11 @@ const dialogueQuestions = [
   {
     "id": "d8",
     "phase": 3,
-    "topic": "",
+    "topic": "Demander de l'aide",
     "speaker": "man",
     "by": "La maman de Mila",
     "context": "La maman vous pose une question sur la crème utilisée. Vous ne connaissez pas la réponse.",
-    "scene": "",
+    "scene": "Quelle crème avez-vous utilisée ?",
     "prompt": "Construisez une réponse professionnelle.",
     "sub": "Mettez les groupes de mots dans le bon ordre.",
     "type": "build",
@@ -729,7 +736,8 @@ const dialogueQuestions = [
       "à ma collègue."
     ],
     "explain": "« Je vais demander à ma collègue » permet de vérifier.",
-    "hint": "Commencez par « Je vais demander »."
+    "hint": "Commencez par « Je vais demander ».",
+    "outcome": "La maman attend pendant que vous vérifiez avec votre collègue."
   },
   {
     "id": "d9",
@@ -770,15 +778,15 @@ let phase=1, round=[],index=0,points=0,phase1Score=0,phase2Score=0,phase3Score=0
 let dialogueHistory=[],dialogueMood=0,glassesLocation='duree',lastReassurance=0,previewOnly=false;
 let selectedChunks=[];
 function show(section){for(const name of ['welcome','game','transition','transition3','finish'])$(name).classList.toggle('hidden',name!==section);window.scrollTo(0,0);}
-function scoreUpdate(){$('scoreBox').textContent='⭐ '+points+' punten';}
+function scoreUpdate(){$('scoreBox').textContent='⭐ '+points+' points';}
 function updatePhases(){
  for(let n=1;n<=3;n++){
   const el=$('phasePill'+n);
   el.className='phasePill '+(training?'':phase===n?'active':phase>n?'done':'');
  }
- $('phasePill1').textContent=training?'🎯 Herhaling':'1 · Woordenschat';
- $('phasePill2').textContent=training?'Moeilijke':'2 · De bel gaat';
- $('phasePill3').textContent=training?'vragen':'3 · Het gesprek';
+ $('phasePill1').textContent=training?'🎯 Révision':'1 · Woordenschat';
+ $('phasePill2').textContent=training?'Questions':'2 · De bel gaat';
+ $('phasePill3').textContent=training?'à revoir':'3 · Het gesprek';
 }
 function resetConversation(){dialogueHistory=[];dialogueMood=0;glassesLocation='duree';lastReassurance=0;}
 function currentScene(q){
@@ -792,10 +800,10 @@ function paintHistory(){
  const visible=phase===3&&!training&&dialogueHistory.length>0;
  panel.classList.toggle('hidden',!visible);
  if(!visible)return;
- panel.append(textNode('div','conversationMemoryTitle','💬 Jullie vorige gespreksbeurten'));
+ panel.append(textNode('div','conversationMemoryTitle','💬 Vos échanges précédents'));
  dialogueHistory.slice(-2).forEach(turn=>{
   const b=textNode('div','memoryExchange','');
-  b.append(textNode('strong','','JIJ · '+turn.you));
+  b.append(textNode('strong','','VOUS · '+turn.you));
   b.append(textNode('span','residentAnswer',turn.who+' · '+turn.reply));
   panel.append(b);
  });
@@ -815,7 +823,7 @@ function recordConversation(q,value,solved=false){
  const reply=storyReply(q,value,solved);
  if(q.phase!==3||training||q.type==='choice')return reply;
  const userAnswer=q.type==='dialogue'?q.options[solved?q.correct:value]:q.type==='choice'?q.options[solved?q.correct:value]:q.type==='build'?q.answer.join(' '):(solved?q.display:String(value));
- dialogueHistory.push({you:userAnswer,reply,who:q.speaker==='nurse'?'De verpleegkundige':'la maman de Mila'});
+ dialogueHistory.push({you:userAnswer,reply,who:q.speaker==='nurse'?'La responsable':'la maman de Mila'});
  return reply;
 }
 function start(review=false){
@@ -836,14 +844,14 @@ function render(){
  answered=false;attempts=0;hintsUsed=false;selectedChunks=[];
  scoreUpdate();updatePhases();
  $('counter').textContent=(index+1)+' / '+round.length;
- $('mission').textContent=training?'HERHALING · '+q.topic:'MISSIE '+q.phase+' · '+q.topic;
+ $('mission').textContent=training?'RÉVISION · '+q.topic:'MISSION '+q.phase+' · '+q.topic;
  $('bar').style.width=(100*index/round.length)+'%';
  $('speaker').textContent= q.by;
  $('scene').dataset.speaker=q.speaker||'resident';
  $('scene').textContent='“'+currentScene(q)+'”';
  $('prompt').textContent=q.prompt;$('subprompt').textContent=q.sub;
  $('storyNote').classList.toggle('hidden',q.phase===1);
- $('storyNote').replaceChildren(textNode('strong','','📍 '+(q.phase===2?'KAMER 12':'KAMER 8')+' · '+(index+1)+' / '+round.length+'  '), document.createTextNode(currentContext(q)));
+ $('storyNote').replaceChildren(textNode('strong','','📍 '+(q.phase===2?'JOURNÉE DE NOÉ':'ACCUEIL DES PARENTS')+' · '+(index+1)+' / '+round.length+'  '), document.createTextNode(currentContext(q)));
  paintHistory();
  $('hint').classList.add('hidden');$('hint').textContent='';
  $('feedback').className='feedback';$('feedback').textContent='';
@@ -851,7 +859,7 @@ function render(){
  $('hintBtn').classList.remove('hidden');$('hintBtn').disabled=false;
  $('revealBtn').classList.remove('hidden');$('skipBtn').classList.remove('hidden');
  $('nextBtn').classList.add('hidden');
- $('nextBtn').textContent=training?(index===round.length-1?'Bekijk je herhaling →':'Volgende vraag →'):(index===round.length-1?(phase===1?'Ontgrendel missie 2 →':phase===2?'Ontgrendel missie 3 →':'Bekijk je resultaat →'):'Ga verder →');
+ $('nextBtn').textContent=training?(index===round.length-1?'Voir mon bilan →':'Question suivante →'):(index===round.length-1?(phase===1?'Débloquer la mission 2 →':phase===2?'Débloquer la mission 3 →':'Voir mon résultat →'):'Continuer →');
  const area=$('answerArea');area.replaceChildren();
  if(q.type==='choice'||q.type==='dialogue'){
   const opts=textNode('div','options','');
@@ -863,19 +871,19 @@ function render(){
  } else if(q.type==='input') {
   const row=textNode('div','inputRow','');
   const input=document.createElement('input');input.id='typed';input.type='text';
-  input.className='answerInput';input.placeholder='Typ je Franse antwoord…';
-  input.setAttribute('aria-label','Jouw antwoord');input.setAttribute('aria-describedby','feedback');
+  input.className='answerInput';input.placeholder='Écrivez votre réponse en français…';
+  input.setAttribute('aria-label','Votre réponse');input.setAttribute('aria-describedby','feedback');
   input.autocomplete='off';input.spellcheck=false;
-  const button=textNode('button','btn purple','Controleer antwoord');button.type='button';
+  const button=textNode('button','btn purple','Vérifier ma réponse');button.type='button';
   const submit=()=>{
    if(answered)return;
    const value=input.value.trim();
-   if(!value){feedback(false,'✏️ Typ eerst een antwoord.','Vul een Franse zin in en druk op Controleer antwoord of Enter.');input.focus();return;}
+   if(!value){feedback(false,'✏️ Écrivez d’abord une réponse.','Écrivez votre réponse, puis cliquez sur Vérifier ou appuyez sur Entrée.');input.focus();return;}
    check(value);
   };
   button.addEventListener('click',submit);
   input.addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();submit();}});
-  row.append(input,button);area.append(row,textNode('p','typeTip','Je mag hoofdletters en accenten gebruiken, maar dat hoeft niet. Meerdere gebruikelijke formuleringen worden herkend.'));
+  row.append(input,button);area.append(row,textNode('p','typeTip','Les majuscules et les accents sont facultatifs. Plusieurs formulations sont acceptées.'));
  } else if(q.type==='build') {
   const response=textNode('div','buildResponse','');response.id='buildResponse';response.setAttribute('aria-live','polite');
   const pool=textNode('div','chipPool','');pool.id='chipPool';
@@ -884,22 +892,22 @@ function render(){
    b.addEventListener('click',()=>{if(answered)return;selectedChunks.push(i);paintBuilder();});pool.appendChild(b);
   });
   const buttons=textNode('div','builderButtons','');
-  const reset=textNode('button','btn ghost','Wis je zin ↺');reset.type='button';reset.id='resetBuilder';reset.addEventListener('click',()=>{selectedChunks=[];paintBuilder();});
-  const verify=textNode('button','btn purple','Controleer zin');verify.type='button';verify.id='checkBuilder';verify.addEventListener('click',()=>{
+  const reset=textNode('button','btn ghost','Effacer ma phrase ↺');reset.type='button';reset.id='resetBuilder';reset.addEventListener('click',()=>{selectedChunks=[];paintBuilder();});
+  const verify=textNode('button','btn purple','Vérifier ma phrase');verify.type='button';verify.id='checkBuilder';verify.addEventListener('click',()=>{
    if(answered)return;
-   if(!selectedChunks.length){feedback(false,'✏️ Bouw eerst een zin.','Klik op de paarse woordgroepen om een Franse zin te maken.');return;}
+   if(!selectedChunks.length){feedback(false,'✏️ Construisez d’abord une phrase.','Cliquez sur les groupes de mots pour composer une phrase.');return;}
    check(selectedChunks.map(i=>q.chunks[i]).join(' '));
   });
-  buttons.append(reset,verify);area.append(textNode('p','typeTip','Klik op de woordgroepen. Een gekozen woordgroep kun je weer verwijderen.'),response,pool,buttons);
+  buttons.append(reset,verify);area.append(textNode('p','typeTip','Cliquez sur les groupes de mots. Cliquez sur un groupe choisi pour le retirer.'),response,pool,buttons);
   paintBuilder();
  }
 }
 function paintBuilder(){
  const area=$('buildResponse'),pool=$('chipPool');if(!area||!pool)return;
  area.replaceChildren();
- if(!selectedChunks.length)area.appendChild(textNode('span','buildPlaceholder','Jouw zin verschijnt hier...'));
+ if(!selectedChunks.length)area.appendChild(textNode('span','buildPlaceholder','Votre phrase apparaît ici…'));
  selectedChunks.forEach((n,position)=>{
-  const b=textNode('button','chosen',round[index].chunks[n]+' ×');b.type='button';b.title='Verwijder woordgroep';
+  const b=textNode('button','chosen',round[index].chunks[n]+' ×');b.type='button';b.title='Retirer le groupe de mots';
   b.addEventListener('click',()=>{if(answered)return;selectedChunks.splice(position,1);paintBuilder();});area.appendChild(b);
  });
  pool.querySelectorAll('button').forEach(btn=>btn.disabled=selectedChunks.includes(Number(btn.dataset.chunk))||answered);
@@ -912,7 +920,7 @@ function correctValue(q){return q.type==='choice'||q.type==='dialogue'?q.options
 function updatePhasePoints(earned){if(!training){if(phase===1)phase1Score+=earned;else if(phase===2)phase2Score+=earned;else if(phase===3)phase3Score+=earned;}}
 function hint(q,isAutomatic=false){
  if(answered)return;
- $('hint').textContent=(isAutomatic?'🔎 Tip voor je tweede poging: ':'💡 Hint: ')+(q.hint||'Herlees de Franse zin en let op de context.');
+ $('hint').textContent=(isAutomatic?'🔎 Indice pour votre deuxième essai : ':'💡 Indice : ')+(q.hint||'Relisez la phrase et observez le contexte.');
  $('hint').classList.remove('hidden');
  if(!isAutomatic&&!hintsUsed){
   hintsUsed=true;
@@ -933,7 +941,7 @@ function complete(q,good,solved=false,value=null){
  $('nextBtn').classList.remove('hidden');
  if(q.phase===2||q.phase===3){
   const reply=q.phase===3?recordConversation(q,value,solved):q.outcome;
-  $('storyOutcome').textContent=solved?'💡 Je hebt de oplossing bekeken. '+(q.phase===3&&q.type!=='choice'?'De reactie: '+reply:'Het verhaal kan verder.'):(q.phase===3&&q.type==='choice'?'📖 '+reply:q.phase===3?'💬 '+(q.id==='d7'?'De verpleegkundige':'la maman de Mila')+': '+reply:reply);
+  $('storyOutcome').textContent=solved?'💡 Vous avez consulté la solution. '+(q.phase===3&&q.type!=='choice'?'Sa réponse : '+reply:'L’histoire peut continuer.'):(q.phase===3&&q.type==='choice'?'📖 '+reply:q.phase===3?'💬 '+(q.id==='d7'?'La maman de Mila':'la maman de Mila')+': '+reply:reply);
   $('storyOutcome').classList.remove('hidden');
  }
  $('nextBtn').focus({preventScroll:true});
@@ -945,7 +953,7 @@ function check(value){
  if(good){
   const earned=attempts===0?10:5;
   points+=earned;updatePhasePoints(earned);scoreUpdate();
-  feedback(true,'✅ Bien joué ! +'+earned+' punten',q.explain);
+  feedback(true,'✅ Bien joué ! +'+earned+' points',q.explain);
   complete(q,true,false,value);return;
  }
  attempts++;mistakes.add(q.id);
@@ -953,34 +961,34 @@ function check(value){
   const b=$('answerArea').querySelectorAll('.option')[value];if(b){b.classList.add('wrong');b.disabled=true;}
  }
  if(attempts===1){
-  feedback(false,'🔎 Nog niet helemaal juist.',(q.phase===3&&q.wrongReply?'la maman de Mila: « '+q.wrongReply+' » ':'')+'Je krijgt een hint en een tweede kans.');
+  feedback(false,'🔎 Ce n’est pas encore ça.',(q.phase===3&&q.wrongReply?'la maman de Mila: « '+q.wrongReply+' » ':'')+' Voici un indice. Vous avez encore un essai.');
   hint(q,true);
   if(q.type==='input'){$('typed').focus();$('typed').select();}
  }else{
-  feedback(false,'💡 Dit is een goed antwoord:',correctValue(q)+' — '+q.explain);
+  feedback(false,'💡 Voici une bonne réponse :',correctValue(q)+' — '+q.explain);
   complete(q,false,true);
  }
 }
-function reveal(){if(answered)return;const q=round[index];mistakes.add(q.id);feedback(false,'💡 Oplossing',correctValue(q)+' — '+q.explain);complete(q,false,true);}
+function reveal(){if(answered)return;const q=round[index];mistakes.add(q.id);feedback(false,'💡 Solution',correctValue(q)+' — '+q.explain);complete(q,false,true);}
 function skip(){if(answered)return;mistakes.add(round[index].id);goNext();}
 function goNext(){
  if(index<round.length-1){index++;render();return;}
  if(training){finish();return;}
- if(phase===2){$('transScore2').textContent='⭐ Missie 2: '+phase2Score+' / '+(storyQuestions.length*10)+' punten';show('transition3');return;}
- if(phase===1){$('transScore').textContent='⭐ Missie 1: '+phase1Score+' / '+(base.length*10)+' punten';show('transition');}
+ if(phase===2){$('transScore2').textContent='⭐ Mission 2 : '+phase2Score+' / '+(storyQuestions.length*10)+' points';show('transition3');return;}
+ if(phase===1){$('transScore').textContent='⭐ Mission 1 : '+phase1Score+' / '+(base.length*10)+' points';show('transition');}
  else finish();
 }
 function finish(){
  show('finish');const total=training?round.length*10:previewOnly?dialogueQuestions.length*10:allQuestions.length*10;
- $('endPoints').textContent=points;$('endDetails').textContent='van '+total+' punten';
+ $('endPoints').textContent=points;$('endDetails').textContent='van '+total+' points';
  const ratio=points/Math.max(1,total);
  $('endEmoji').textContent=ratio>=.85?'🏆':ratio>=.55?'🎉':'💪';
- $('endTitle').textContent=training?'Herhaling voltooid!':previewOnly?'Proefmissie voltooid!':ratio>=.85?'Incroyable !':ratio>=.55?'Bravo !':'On continue !';
- $('endText').textContent=training?'Je hebt je moeilijke woorden en gesprekszinnen opnieuw geoefend.':previewOnly?'Je hebt alleen missie 3 getest. Start de volledige shift om alle drie de missies te spelen.':ratio>=.85?'Je begreep de bewoner uitstekend en reageerde professioneel in het Frans.':ratio>=.55?'Je hielp Noé vooruit en oefende echte stagegesprekken. Bekijk zeker je moeilijke zinnen.':'Je hebt de shift doorlopen. Herhaal de woorden en reacties die nog lastig waren.';
+ $('endTitle').textContent=training?'Révision terminée !':previewOnly?'Mission de test terminée !':ratio>=.85?'Incroyable !':ratio>=.55?'Bravo !':'On continue !';
+ $('endText').textContent=training?'Vous avez révisé les mots et les phrases difficiles.':previewOnly?'Vous avez testé la mission 3. Recommencez pour découvrir toute la journée.':ratio>=.85?'Vous avez très bien compris les besoins des enfants et communiqué avec les parents.':ratio>=.55?'Vous avez aidé Noé et pratiqué des conversations utiles. Révisez vos phrases difficiles.':'Votre journée est terminée. Révisez les mots les plus difficiles.';
  const box=$('endBreakdown');box.replaceChildren();
- if(!training&&!previewOnly){box.append(textNode('span','','📚 Woordenschat: '+phase1Score+' / '+base.length*10),textNode('span','','🔔 De bel gaat: '+phase2Score+' / '+storyQuestions.length*10),textNode('span','','💬 Het gesprek: '+phase3Score+' / '+dialogueQuestions.length*10));}
- if(previewOnly){box.append(textNode('span','','💬 Het gesprek: '+phase3Score+' / '+dialogueQuestions.length*10));}
- if(!training){box.append(textNode('p','branchTag',dialogueMood>=6?'👩'la maman de Mila voelde zich gehoord en werd steeds rustiger.':'👩'Je hebt naar la maman de Mila geluisterd en passende reacties geoefend.'));}
+ if(!training&&!previewOnly){box.append(textNode('span','','📚 Vocabulaire : '+phase1Score+' / '+base.length*10),textNode('span','','🍼 Le bébé: '+phase2Score+' / '+storyQuestions.length*10),textNode('span','','💬 Dialogue : '+phase3Score+' / '+dialogueQuestions.length*10));}
+ if(previewOnly){box.append(textNode('span','','💬 Dialogue : '+phase3Score+' / '+dialogueQuestions.length*10));}
+ if(!training){box.append(textNode('p','branchTag',dialogueMood>=6?'👩 La maman de Mila s’est sentie écoutée et rassurée.':'👩 Vous avez écouté la maman de Mila et choisi des réponses adaptées.'));}
  $('mistakesBtn').classList.toggle('hidden',training||mistakes.size===0);
 }
 $('start').addEventListener('click',()=>start(false));
