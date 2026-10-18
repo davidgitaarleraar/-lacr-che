@@ -1,0 +1,1000 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="theme-color" content="#131e38"/>
+<title>Au secours ! · Mon premier jour à la crèche</title>
+<style>
+:root{--ink:#182342;--muted:#657188;--navy:#111b34;--violet:#694cda;--violet2:#8c77ee;--line:#e8eaf2;--paper:#fff;--bg:#f6f5fb;--mint:#c7f7e8;--orange:#ffc879;--danger:#c7355b;--good:#127655}
+*{box-sizing:border-box}html{font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Arial,sans-serif}body{margin:0;background:radial-gradient(ellipse at 85% 5%,#ece5ff 0,transparent 34%),radial-gradient(ellipse at 10% 55%,#e8f7f3 0,transparent 33%),var(--bg);color:var(--ink);min-height:100vh}button,input{font:inherit}button{cursor:pointer}.shell{max-width:1000px;margin:0 auto;padding:22px 20px 60px}.top{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:26px}.brand{display:flex;gap:9px;align-items:center;font-size:13px;font-weight:850;letter-spacing:.09em;text-transform:uppercase;color:#5d54aa}.logo{display:grid;place-items:center;background:#ded5ff;border-radius:13px;width:39px;height:39px;font-size:20px}.flag{font-size:13px;color:#4c5a74;background:white;border:1px solid var(--line);padding:10px 14px;border-radius:100px}.hero{display:grid;grid-template-columns:1.18fr .82fr;gap:26px;align-items:stretch}.heroMain{padding:42px 38px;border-radius:28px;background:var(--navy);color:white;position:relative;overflow:hidden;min-height:475px}.heroMain:after{content:"";position:absolute;width:240px;height:240px;border-radius:50%;background:#9b83ff;opacity:.16;bottom:-110px;right:-80px}.labelTop{display:inline-flex;align-items:center;gap:8px;border:1px solid #514e89;background:#272951;padding:8px 12px;border-radius:100px;color:#d8d0ff;font-size:12px;font-weight:750;letter-spacing:.08em}.hero h1{font-weight:850;letter-spacing:-.065em;font-size:clamp(40px,6vw,64px);line-height:1.02;margin:27px 0 19px}.hero h1 em{font-style:normal;color:#a998ff}.hero p{font-size:16px;line-height:1.62;color:#d4d9ea;max-width:470px;margin:0 0 30px}.heroArt{background:#f8ebd9;border-radius:28px;padding:25px;display:flex;flex-direction:column;justify-content:space-between;min-height:475px;position:relative;overflow:hidden}.poster{width:100%;min-height:285px;border-radius:20px;background:#e2d6ff;display:flex;align-items:center;justify-content:center;font-size:118px;position:relative}.poster .star{position:absolute;font-size:36px;right:28px;top:29px}.poster .speech{position:absolute;right:15px;bottom:20px;background:#fff;padding:11px 15px;font-size:15px;font-weight:850;transform:rotate(5deg);border-radius:14px;box-shadow:0 7px 15px #4334631c}.smallCaps{font-size:11px;font-weight:850;color:#775f42;letter-spacing:.13em;text-transform:uppercase}.heroArt h2{margin:7px 0 5px;font-size:23px;line-height:1.18;letter-spacing:-.04em}.heroArt p{font-size:13px;color:#746d6c;margin:0;line-height:1.4}.btn{border:0;border-radius:14px;padding:15px 23px;display:inline-flex;justify-content:center;align-items:center;gap:9px;font-size:15px;font-weight:850;transition:transform .15s,filter .15s}.btn:hover:not(:disabled){transform:translateY(-1px);filter:brightness(1.03)}.btn:disabled{opacity:.55;cursor:not-allowed}.primary{background:#a8efc9;color:#163f39}.purple{background:var(--violet);color:white}.ghost{background:white;border:1px solid var(--line);color:var(--ink)}.outline{background:transparent;border:1px solid #c7c3e9;color:#5141a9}.micro{display:flex;gap:13px;flex-wrap:wrap;font-size:12px;color:#b9bfce;margin-top:21px}.micro span{display:flex;gap:6px;align-items:center}.overview{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:18px}.overview .tile{padding:20px 16px;background:#fff;border:1px solid #eeedf4;border-radius:17px}.tile .emoji{font-size:25px}.tile h3{font-size:14px;margin:14px 0 5px;line-height:1.3}.tile p{font-size:12px;line-height:1.5;color:var(--muted);margin:0}.game{max-width:790px;margin:0 auto}.hidden{display:none!important}.gamehead{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:14px}.back{background:transparent;border:0;color:#645b8e;font-weight:800;padding:8px 0}.score{background:#fff;border:1px solid var(--line);padding:10px 14px;border-radius:99px;font-weight:800;color:#4c4277;font-size:13px}.progressTrack{width:100%;height:9px;border-radius:20px;background:#e6e4f1;overflow:hidden;margin-bottom:22px}.progressFill{height:100%;background:linear-gradient(90deg,#6956db,#b4a6ff);transition:width .4s;border-radius:20px}.qcard{border:1px solid #e8e5f0;border-radius:25px;background:white;box-shadow:0 14px 50px #27214612;padding:32px}.qtop{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:19px}.mission{color:#5e50bd;font-weight:850;letter-spacing:.07em;text-transform:uppercase;font-size:12px}.counter{font-size:12px;color:var(--muted);font-weight:750}.chat{background:#f7f4ff;border:1px solid #ede6ff;padding:19px 20px 19px 60px;border-radius:18px;position:relative;color:#453476;font-size:18px;font-weight:780;line-height:1.4;margin-bottom:23px}.chat:before{content:"👵";position:absolute;left:16px;top:15px;font-size:25px}.qcard h2{font-size:clamp(23px,3.6vw,31px);letter-spacing:-.04em;line-height:1.19;margin:0 0 9px}.subtitle{font-size:13px;color:var(--muted);line-height:1.5;margin:0 0 20px}.options{display:grid;gap:11px}.option{display:flex;text-align:left;gap:14px;align-items:center;padding:17px 18px;min-height:65px;border:1.5px solid #e9e6f1;border-radius:15px;background:#fff;color:var(--ink);font-weight:700;line-height:1.4}.option:hover:not(:disabled){border-color:#aca0fa;background:#faf9ff}.letter{display:grid;place-items:center;flex-shrink:0;width:29px;height:29px;background:#f2f0f9;color:#777093;border-radius:10px;font-size:12px;font-weight:900}.option.right{border-color:#41b78d;background:#edfff5}.option.wrong{border-color:#f1aab8;background:#fff5f7}.inputRow{display:flex;gap:10px;flex-wrap:wrap}.answerInput{flex:1;min-width:195px;outline:none;font-size:17px;border-radius:14px;padding:16px 18px;border:1.5px solid #dcd8eb}.answerInput:focus{border-color:var(--violet);box-shadow:0 0 0 3px #ebe7ff}.feedback{margin-top:23px;border-radius:16px;padding:16px 18px;display:none;line-height:1.55;font-size:14px}.feedback.good{display:block;background:#e9fcf2;color:#17674e;border:1px solid #b3efd2}.feedback.bad{display:block;background:#fff2e9;color:#8b522d;border:1px solid #f9d5b6}.feedback strong{display:block;font-size:16px;margin-bottom:4px}.actions{display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;margin-top:24px}.actions .next{margin-left:auto}.hintBox{font-size:13px;color:#786789;background:#f5f2fe;padding:12px 14px;border-radius:12px;margin-top:14px;border:1px solid #e8e1fc}.end{background:white;border:1px solid var(--line);border-radius:25px;padding:36px;max-width:750px;margin:0 auto;text-align:center;box-shadow:0 15px 50px #28224411}.endIcon{font-size:65px}.end h1{font-size:40px;letter-spacing:-.055em;line-height:1.1;margin:10px 0}.end p{color:var(--muted);line-height:1.6}.result{background:#f4f0ff;border-radius:17px;padding:23px;margin:25px auto;max-width:320px}.result strong{font-size:44px;color:#5038af}.result small{display:block;color:#7668ac;font-size:13px}.endButtons{display:flex;gap:9px;flex-wrap:wrap;justify-content:center}.foot{margin-top:31px;color:#7c8294;font-size:12px;text-align:center}.noprint{display:block}@media(max-width:720px){.shell{padding:15px 14px 30px}.hero{grid-template-columns:1fr}.heroMain{padding:33px 25px;min-height:unset}.hero h1{font-size:46px}.heroArt{min-height:unset;display:none}.overview{grid-template-columns:repeat(2,1fr)}.qcard{padding:23px 18px}.chat{font-size:16px}.inputRow .btn{width:100%}.actions{align-items:stretch}.actions button{flex:1}.actions .next{margin-left:0}.end{padding:28px 21px}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{transition:none!important;animation:none!important}}
+.helpActions{display:flex;flex-wrap:wrap;gap:9px}.linkAction{border:1px solid #e1dfed;background:#fff;color:#58507b;padding:11px 13px;border-radius:12px;font-size:13px;font-weight:800}.linkAction:hover{background:#f9f7ff}.playGuide{font-size:12px;color:var(--muted);margin:11px 0 0}.option:disabled{cursor:default}.option.wrong:disabled{opacity:1}
+
+.phasePills{display:flex;gap:9px;flex-wrap:wrap;margin:0 0 17px}.phasePill{display:inline-flex;align-items:center;gap:7px;font-size:12px;font-weight:800;padding:9px 12px;border-radius:100px;background:#edeaf5;color:#77718e;border:1px solid #e2deee}.phasePill.active{background:#ded6ff;color:#5139ac;border-color:#c7b9ff}.phasePill.done{background:#e1f8ec;color:#20674e;border-color:#c5eddb}.storyNote{background:#fff9e9;border:1px solid #f3dfaf;border-radius:16px;padding:13px 16px;margin-bottom:17px;color:#74501a;font-size:13px;line-height:1.5}.storyNote strong{color:#5c4319}.speaker{font-size:11px;letter-spacing:.08em;text-transform:uppercase;font-weight:850;color:#7461b1;margin:0 0 8px}.chat{padding:18px 20px 18px 61px}.chat[data-speaker="nurse"]{background:#ecf9f8;border-color:#caeeed;color:#245f63}.chat[data-speaker="nurse"]:before{content:"👩‍⚕️"}.chat[data-speaker="call"]{background:#fff4e5;border-color:#ffe0b1;color:#805123}.chat[data-speaker="call"]:before{content:"🔔"}.chat[data-speaker="resident"]:before{content:"👵"}.hintBox{display:none}.hintBox:not(.hidden){display:block}.storyOutcome{display:none;margin-top:13px;background:#f4faf6;border:1px solid #d1ecd9;color:#2b6550;border-radius:13px;padding:12px 15px;font-size:13px;line-height:1.5}.storyOutcome:not(.hidden){display:block}.typeTip{font-size:12px;color:var(--muted);margin:10px 0 0}.chipPool{display:flex;flex-wrap:wrap;gap:9px;margin-top:9px}.chip{border:1px solid #d8d0f5;background:#f5f2ff;color:#4c3b83;font-weight:750;padding:12px 14px;border-radius:12px}.chip:hover:not(:disabled){border-color:#9683ee;background:#eee8ff}.chip:disabled{opacity:.43;cursor:default}.buildResponse{display:flex;align-items:center;gap:8px;flex-wrap:wrap;border:2px dashed #d8d1eb;border-radius:15px;padding:12px;min-height:62px;background:#fbfaff;margin:6px 0 17px}.buildResponse .chosen{border:1px solid #b3a3ee;background:#e9e2ff;color:#41347c;border-radius:10px;padding:10px 12px;font-weight:700}.buildPlaceholder{color:#9a92aa;font-size:14px}.builderButtons{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}.builderButtons button{min-height:42px}.transitionCard{max-width:760px;margin:0 auto;overflow:hidden;border-radius:28px;background:white;border:1px solid var(--line);box-shadow:0 14px 50px #27214612}.transitionTop{background:#171e3d;color:#fff;padding:29px 34px 33px;position:relative}.transitionTop::after{content:"🔔";position:absolute;font-size:90px;opacity:.17;right:25px;top:6px}.transitionTop .labelTop{font-size:11px}.transitionTop h1{font-size:clamp(31px,5vw,49px);letter-spacing:-.05em;line-height:1.09;margin:23px 0 12px;max-width:550px}.transitionTop p{color:#dbe2fa;line-height:1.6;margin:0;max-width:500px}.transitionBody{padding:29px 34px 34px}.transitionBody p{line-height:1.7;color:#59657e;margin:9px 0 20px}.transScore{display:inline-block;border-radius:10px;background:#edfbf4;border:1px solid #d1f1e1;padding:10px 14px;color:#206d55;font-weight:800;font-size:13px}.storySteps{display:flex;gap:9px;flex-wrap:wrap;margin-bottom:20px}.storySteps span{border-radius:20px;background:#f6f3ff;padding:8px 12px;font-size:12px;color:#654c9a;font-weight:700}.endBreakdown{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin:13px auto 18px}.endBreakdown span{background:#f6f5fb;border:1px solid #ece9f4;border-radius:11px;padding:10px 14px;font-size:13px;color:#584b8a}.finishNote{max-width:530px;margin:16px auto;font-size:13px!important}.option{white-space:normal}.option:focus-visible,.chip:focus-visible,.btn:focus-visible,.linkAction:focus-visible{outline:3px solid #f1b94c;outline-offset:2px}.foot{line-height:1.5}.phaseEnd{display:none}.phaseEnd:not(.hidden){display:block}
+@media(max-width:720px){.transitionTop,.transitionBody{padding:25px 22px}.gamehead{flex-wrap:wrap}.phasePills{gap:6px}.phasePill{padding:8px 10px;font-size:11px}.storySteps span{font-size:11px}.chat{padding-left:53px}}
+
+/* Missie 3: gesprekskeuzes veranderen de reactie van de bewoner. */
+.teacherPreview{display:block;margin-top:13px;background:none;border:0;padding:8px 0;color:#d6cfff;font-size:13px;font-weight:700;text-decoration:underline;text-underline-offset:3px}.teacherPreview:hover{color:#fff}
+.conversationMemory{background:#f0f0f8;border:1px solid #dedbed;border-radius:16px;padding:13px 16px;margin:0 0 17px;display:grid;gap:9px}
+.conversationMemoryTitle{font-size:11px;letter-spacing:.1em;font-weight:850;color:#79738f;text-transform:uppercase}
+.memoryExchange{display:flex;gap:7px;align-items:start;flex-direction:column;padding:10px 12px;background:white;border-radius:12px;font-size:13px;line-height:1.5}
+.memoryExchange strong{font-size:11px;color:#6a5abc;letter-spacing:.04em}.memoryExchange .residentAnswer{color:#3a6870}
+.branchTag{font-size:11px;font-weight:850;color:#17674e;letter-spacing:.03em;margin-top:5px}
+.chat[data-speaker="man"]{background:#edf4ff;border-color:#d7e7ff;color:#2a4a79}.chat[data-speaker="man"]:before{content:"👴"}
+.option .letter{min-width:29px}.phasePill{white-space:nowrap}
+@media(max-width:720px){.overview{grid-template-columns:1fr!important}.phasePills{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:5px}.phasePill{justify-content:center;text-align:center;padding:9px 6px;font-size:10px;white-space:normal}.memoryExchange{font-size:12px}}
+</style>
+</head>
+<body>
+<main class="shell">
+  <div class="top"><div class="brand"><span class="logo" aria-hidden="true">✚</span> LE STAGE · FRANÇAIS A2</div><div class="flag">🇫🇷 La crèche</div></div>
+  <section id="welcome">
+    <div class="hero">
+      <div class="heroMain">
+        <div class="labelTop">✦ INTERACTIEF TAALSPEL</div>
+        <h1>Au secours !<br><em>Une maman francophone !</em></h1>
+        <p>Je begint aan je stage in een woonzorgcentrum. Leer de belangrijkste woorden, help Noé en voer daarna een echt gesprek met la maman de Mila. Jouw keuzes beïnvloeden zijn reacties.</p>
+        <button type="button" id="start" class="btn primary">Start je shift <span aria-hidden="true">→</span></button>
+        <button type="button" id="previewThird" class="teacherPreview">Test alleen missie 3 (docent) ↗</button>
+        <div class="micro"><span>⏱ 20–25 minuten</span><span>🎯 34 uitdagingen</span><span>🗣 A2-Frans</span></div>
+      </div>
+      <div class="heroArt"><div class="poster">👩‍⚕️<span class="star">✦</span><span class="speech">Coucou ! 🍼</span></div><div><div class="smallCaps">VAN WOORDEN NAAR ECHTE GESPREKKEN</div><h2>Drie missies. Eén stagedag.</h2><p>Herken de woorden, begrijp de bewoner en reageer beleefd en veilig.</p></div></div>
+    </div>
+    <div class="overview" style="grid-template-columns:repeat(3,minmax(0,1fr))">
+      <div class="tile"><div class="emoji">📚</div><h3>Missie 1 · Les bases</h3><p>16 bestaande vragen, verdeeld over kennismaken, behoeften, bewegen en familie.</p></div>
+      <div class="tile"><div class="emoji">🔔</div><h3>Missie 2 · Le bébé</h3><p>9 stappen in een verhaal. Begrijp wat er gebeurt en formuleer de juiste reactie in het Frans.</p></div>
+      <div class="tile"><div class="emoji">💬</div><h3>Missie 3 · Un vrai dialogue</h3><p>9 interactieve gespreksbeurten. Kies je woorden, zie hoe de bewoner reageert en geef informatie door.</p></div>
+    </div>
+  </section>
+  <section id="game" class="game hidden" aria-live="polite">
+    <div class="gamehead"><button type="button" class="back" id="homeBtn">← Startscherm</button><div class="score" id="scoreBox">⭐ 0 punten</div></div>
+    <div class="phasePills"><span id="phasePill1" class="phasePill active">1 · Woordenschat</span><span id="phasePill2" class="phasePill">2 · De bel gaat</span><span id="phasePill3" class="phasePill">3 · Het gesprek</span></div>
+    <div class="progressTrack" aria-label="Voortgang"><div class="progressFill" id="bar" style="width:0%"></div></div>
+    <div class="storyNote hidden" id="storyNote"></div>
+    <div class="conversationMemory hidden" id="conversationMemory" aria-label="Vorige gespreksbeurten"></div>
+    <div class="qcard">
+      <div class="qtop"><span class="mission" id="mission">MISSIE 1</span><span class="counter" id="counter">1 / 16</span></div>
+      <div class="speaker" id="speaker">Noé zegt</div>
+      <div class="chat" id="scene" data-speaker="resident"></div>
+      <h2 id="prompt"></h2><p class="subtitle" id="subprompt"></p>
+      <div id="answerArea"></div>
+      <div class="hintBox hidden" id="hint"></div>
+      <div class="feedback" id="feedback" role="status" aria-live="polite"></div>
+      <div id="storyOutcome" class="storyOutcome hidden"></div>
+      <p class="playGuide">Na een fout antwoord krijg je een hint en een tweede kans. Na twee foute pogingen verschijnt de oplossing en kun je verdergaan.</p>
+      <div class="actions"><div class="helpActions">
+        <button type="button" class="btn outline" id="hintBtn">💡 Extra hulp (−2 pt)</button>
+        <button type="button" class="linkAction" id="revealBtn">Toon oplossing</button>
+        <button type="button" class="linkAction" id="skipBtn">Sla over →</button>
+      </div><button type="button" class="btn purple next hidden" id="nextBtn">Verder →</button></div>
+    </div>
+  </section>
+  <section id="transition" class="hidden">
+    <div class="transitionCard">
+      <div class="transitionTop"><div class="labelTop">MISSIE 1 VOLTOOID</div><h1>🍼 Coucou !<br>Noé arrive à la crèche.</h1><p>Net wanneer je denkt dat je klaar bent, gaat het oproepsignaal. Noé heeft je nodig.</p></div>
+      <div class="transitionBody"><span id="transScore" class="transScore">Goed gedaan!</span><h2>Missie 2 · Le bébé</h2><p>Je hoort de bewoner, probeert te begrijpen wat er mis is en formuleert zelf Franse reacties. Bij een fout krijg je een hint en kun je opnieuw antwoorden. Pas daarna gaat het verhaal verder.</p><div class="storySteps"><span>👶 Observer</span><span>💬 Répondre</span><span>🤝 Prévenir sa responsable</span></div><button type="button" class="btn purple" id="continueStory">Beantwoord de oproep →</button></div>
+    </div>
+  </section>
+  <section id="transition3" class="hidden">
+    <div class="transitionCard">
+      <div class="transitionTop"><div class="labelTop">MISSIE 2 VOLTOOID</div><h1>👩 Bonjour !<br>La maman de Mila arrive.</h1><p>De verpleegkundige heeft Noé geholpen. Maar je stagedag zit er nog niet op: in de gang spreekt een andere bewoner je aan.</p></div>
+      <div class="transitionBody"><span id="transScore2" class="transScore">Goed gedaan!</span><h2>Missie 3 · Un vrai dialogue</h2><p>Dit keer kies je zelf hoe je antwoordt. Soms zijn meerdere Franse reacties goed. De bewoner reageert anders op jouw aanpak, en het volgende gesprek houdt rekening met wat je hebt gezegd. Blijf vriendelijk, luister en schakel de verpleegkundige in wanneer dat nodig is.</p><div class="storySteps"><span>👂 Écouter</span><span>💬 Choisir ses mots</span><span>🤝 Rassurer</span><span>🩺 Transmettre</span></div><button type="button" class="btn purple" id="continueDialogue">Ga naar kamer 8 →</button></div>
+    </div>
+  </section>
+  <section id="finish" class="end hidden"><div class="endIcon" id="endEmoji">🏆</div><h1 id="endTitle">Bravo !</h1><p id="endText"></p><div class="result"><strong id="endPoints">0</strong><small id="endDetails">van 250 punten</small></div><div id="endBreakdown" class="endBreakdown"></div><p class="finishNote">Je antwoorden blijven in dit browservenster; de resultaten worden niet naar de leerkracht verstuurd. Bij medische situaties volg je altijd de stageafspraken en verwittig je de verpleegkundige.</p><div class="endButtons"><button type="button" class="btn purple" id="againBtn">🔁 Opnieuw spelen</button><button type="button" class="btn ghost hidden" id="mistakesBtn">🎯 Oefen je fouten</button></div></section>
+  <p class="foot">Versie 5 · 16 woordenschatvragen + 9 oproepsituaties + 9 interactieve gesprekstappen · Typen via knop of Enter · Offline speelbaar</p>
+</main>
+<script>
+const baseQuestions = [
+  {
+    "topic": "L'accueil",
+    "scene": "Bonjour, je suis la maman de Lina.",
+    "prompt": "Que dites-vous à cette maman ?",
+    "sub": "Choisissez la bonne réponse.",
+    "type": "choice",
+    "options": [
+      "Bonjour Madame ! Comment va Lina ?",
+      "Tu es Lina ?",
+      "Je ne parle pas français."
+    ],
+    "correct": 0,
+    "explain": "Une salutation polie et une question simple pour commencer.",
+    "hint": "Commencez par « Bonjour Madame ».",
+    "mission": 1
+  },
+  {
+    "topic": "Les affaires",
+    "scene": "Le bébé a besoin d'une couche propre.",
+    "prompt": "Traduisez « de luier ». ",
+    "sub": "Écrivez votre réponse en français.",
+    "type": "input",
+    "accepted": [
+      "la couche",
+      "une couche"
+    ],
+    "display": "la couche",
+    "hint": "C'est le mot pour changer un bébé : la c…",
+    "explain": "« La couche » veut dire « de luier ».",
+    "mission": 1
+  },
+  {
+    "topic": "Le repas",
+    "scene": "Noé a faim.",
+    "prompt": "Que donne-t-on à un bébé qui doit boire du lait ?",
+    "sub": "Choisissez la bonne réponse.",
+    "type": "choice",
+    "options": [
+      "Un ballon",
+      "Un biberon",
+      "Un livre"
+    ],
+    "correct": 1,
+    "explain": "Le biberon contient le lait du bébé.",
+    "hint": "On le remplit avec du lait.",
+    "mission": 1
+  },
+  {
+    "topic": "Le repas",
+    "scene": "Je protège les vêtements de Mila pendant le repas.",
+    "prompt": "Traduisez « het slabbetje ». ",
+    "sub": "Écrivez votre réponse en français.",
+    "type": "input",
+    "accepted": [
+      "le bavoir",
+      "un bavoir"
+    ],
+    "display": "le bavoir",
+    "hint": "Ce mot commence par b…",
+    "explain": "Le bavoir protège les vêtements pendant le repas.",
+    "mission": 1
+  },
+  {
+    "topic": "Les affaires",
+    "scene": "Lina cherche son doudou.",
+    "prompt": "Qu'est-ce qu'un « doudou » ?",
+    "sub": "Choisissez la bonne réponse.",
+    "type": "choice",
+    "options": [
+      "Un jouet ou un tissu qu'elle aime beaucoup",
+      "Une cuillère",
+      "Une poussette"
+    ],
+    "correct": 0,
+    "explain": "Le doudou aide parfois à calmer l'enfant.",
+    "hint": "Il peut être très doux et rassurant.",
+    "mission": 2
+  },
+  {
+    "topic": "Le sommeil",
+    "scene": "Le bébé bâille beaucoup.",
+    "prompt": "Qu'est-ce que cela veut dire ?",
+    "sub": "Choisissez la bonne réponse.",
+    "type": "choice",
+    "options": [
+      "Il a soif.",
+      "Il a sommeil.",
+      "Il a faim."
+    ],
+    "correct": 1,
+    "explain": "« Avoir sommeil » signifie avoir envie de dormir.",
+    "hint": "Il est peut-être fatigué.",
+    "mission": 2
+  },
+  {
+    "topic": "Le sommeil",
+    "scene": "Mila a fait une bonne sieste.",
+    "prompt": "Comment dire « Ze heeft goed geslapen » ?",
+    "sub": "Mettez les groupes de mots dans le bon ordre.",
+    "type": "build",
+    "chunks": [
+      "bien dormi.",
+      "Elle a",
+      "ce matin."
+    ],
+    "answer": [
+      "Elle a",
+      "bien dormi."
+    ],
+    "explain": "« Elle a bien dormi. » est une phrase simple au passé composé.",
+    "hint": "Commencez par « Elle a ».",
+    "mission": 2
+  },
+  {
+    "topic": "Le sommeil",
+    "scene": "Après le repas, l'enfant va dormir.",
+    "prompt": "Traduisez « het dutje ». ",
+    "sub": "Écrivez votre réponse en français.",
+    "type": "input",
+    "accepted": [
+      "la sieste",
+      "une sieste"
+    ],
+    "display": "la sieste",
+    "hint": "Ce mot commence par s…",
+    "explain": "« Faire la sieste » = een dutje doen.",
+    "mission": 2
+  },
+  {
+    "topic": "Le repas",
+    "scene": "Il est midi. Lina mange avec une cuillère.",
+    "prompt": "Qu'est-ce qu'elle mange ?",
+    "sub": "Choisissez la bonne réponse.",
+    "type": "choice",
+    "options": [
+      "Une purée",
+      "Une couche",
+      "Un doudou"
+    ],
+    "correct": 0,
+    "explain": "Une purée est un repas adapté aux jeunes enfants.",
+    "hint": "C'est un plat mou, souvent avec des légumes.",
+    "mission": 3
+  },
+  {
+    "topic": "Le repas",
+    "scene": "La maman demande : « Elle a bien mangé ? »",
+    "prompt": "Quelle réponse est correcte ?",
+    "sub": "Choisissez la bonne réponse.",
+    "type": "choice",
+    "options": [
+      "Oui, elle a bien mangé.",
+      "Oui, elle a bien dormi.",
+      "Oui, elle a joué."
+    ],
+    "correct": 0,
+    "explain": "La question parle du repas : répondez sur ce qu'elle a mangé.",
+    "hint": "Repérez « mangé ».",
+    "mission": 3
+  },
+  {
+    "topic": "Les émotions",
+    "scene": "Noé est triste et il fait beaucoup de bruit.",
+    "prompt": "Traduisez « huilen » à l'infinitif.",
+    "sub": "Écrivez votre réponse en français.",
+    "type": "input",
+    "accepted": [
+      "pleurer"
+    ],
+    "display": "pleurer",
+    "hint": "Le mot commence par p…",
+    "explain": "« Pleurer » = huilen.",
+    "mission": 3
+  },
+  {
+    "topic": "Les émotions",
+    "scene": "Lina sourit et rit avec les autres enfants.",
+    "prompt": "Comment est-elle ?",
+    "sub": "Choisissez la bonne réponse.",
+    "type": "choice",
+    "options": [
+      "Elle est contente.",
+      "Elle est malade.",
+      "Elle a faim."
+    ],
+    "correct": 0,
+    "explain": "Un enfant qui sourit et rit est souvent content.",
+    "hint": "« Sourire » et « rire » sont des indices.",
+    "mission": 3
+  },
+  {
+    "topic": "Les jeux",
+    "scene": "Mila s'amuse avec ses jouets.",
+    "prompt": "Comment dire « Hij heeft met de blokken gespeeld » ?",
+    "sub": "Mettez les groupes de mots dans le bon ordre.",
+    "type": "build",
+    "chunks": [
+      "avec les cubes.",
+      "Il a joué",
+      "Il a dormi"
+    ],
+    "answer": [
+      "Il a joué",
+      "avec les cubes."
+    ],
+    "explain": "« Jouer avec » = spelen met.",
+    "hint": "Utilisez « Il a joué ».",
+    "mission": 4
+  },
+  {
+    "topic": "Les soins",
+    "scene": "La couche du bébé est sale.",
+    "prompt": "Que faut-il faire ?",
+    "sub": "Choisissez la bonne réponse.",
+    "type": "choice",
+    "options": [
+      "Changer sa couche.",
+      "Donner un ballon.",
+      "Mettre ses chaussures."
+    ],
+    "correct": 0,
+    "explain": "Il faut changer la couche pour garder le bébé propre.",
+    "hint": "Pensez aux soins du bébé.",
+    "mission": 4
+  },
+  {
+    "topic": "Les affaires",
+    "scene": "La maman arrive avec son bébé dans une poussette.",
+    "prompt": "Traduisez « de kinderwagen ». ",
+    "sub": "Écrivez votre réponse en français.",
+    "type": "input",
+    "accepted": [
+      "la poussette",
+      "une poussette"
+    ],
+    "display": "la poussette",
+    "hint": "Le mot commence par p…",
+    "explain": "« La poussette » = de kinderwagen.",
+    "mission": 4
+  },
+  {
+    "topic": "La sécurité",
+    "scene": "Un bébé tousse beaucoup et semble malade.",
+    "prompt": "Que faites-vous pendant votre stage ?",
+    "sub": "Choisissez la bonne réponse.",
+    "type": "choice",
+    "options": [
+      "Je donne un médicament.",
+      "Je ne dis rien.",
+      "Je préviens ma responsable."
+    ],
+    "correct": 2,
+    "explain": "Une stagiaire signale les symptômes et suit les consignes de la crèche.",
+    "hint": "Il faut demander l'aide d'un adulte responsable.",
+    "mission": 4
+  }
+];
+const storyQuestions = [
+  {
+    "id": "s1",
+    "phase": 2,
+    "topic": "",
+    "speaker": "resident",
+    "by": "La maman de Noé",
+    "context": "Il est huit heures trente. La maman dépose Noé, dix mois, à la crèche.",
+    "scene": "",
+    "prompt": "À quelle heure Noé a-t-il bu son biberon ?",
+    "sub": "Choisissez la bonne réponse.",
+    "type": "choice",
+    "options": [
+      "À sept heures.",
+      "À huit heures.",
+      "À dix heures."
+    ],
+    "correct": 1,
+    "explain": "La maman a dit « à huit heures ».",
+    "hint": "Repérez « huit heures »."
+  },
+  {
+    "id": "s2",
+    "phase": 2,
+    "topic": "",
+    "speaker": "resident",
+    "by": "Noé · 10 mois",
+    "context": "Plus tard, Noé pleure. Il est presque l'heure de son repas.",
+    "scene": "",
+    "prompt": "Que faites-vous d'abord ?",
+    "sub": "Choisissez la bonne réponse.",
+    "type": "choice",
+    "options": [
+      "Je regarde ce dont Noé a besoin et je demande à ma collègue si nécessaire.",
+      "Je le laisse pleurer seul.",
+      "Je lui donne un aliment sans vérifier les consignes."
+    ],
+    "correct": 0,
+    "explain": "Observez le bébé et respectez les informations et les consignes de la crèche.",
+    "hint": "Il faut observer et vérifier avant d'agir."
+  },
+  {
+    "id": "s3",
+    "phase": 2,
+    "topic": "",
+    "speaker": "resident",
+    "by": "Votre collègue",
+    "context": "Votre collègue remarque que la couche de Noé est sale.",
+    "scene": "",
+    "prompt": "De quoi Noé a-t-il besoin ?",
+    "sub": "Choisissez la bonne réponse.",
+    "type": "choice",
+    "options": [
+      "D'un livre.",
+      "D'une couche propre.",
+      "D'une poussette."
+    ],
+    "correct": 1,
+    "explain": "Une couche propre = een schone luier.",
+    "hint": "C'est un soin d'hygiène."
+  },
+  {
+    "id": "s4",
+    "phase": 2,
+    "topic": "",
+    "speaker": "resident",
+    "by": "Votre collègue",
+    "context": "Vous expliquez ce que vous allez faire, avec l'accord de votre responsable.",
+    "scene": "",
+    "prompt": "Construisez : « Ik ga zijn luier verversen ».",
+    "sub": "Mettez les groupes de mots dans le bon ordre.",
+    "type": "build",
+    "chunks": [
+      "sa couche.",
+      "Je vais changer",
+      "son biberon."
+    ],
+    "answer": [
+      "Je vais changer",
+      "sa couche."
+    ],
+    "explain": "« Je vais changer sa couche » décrit une action proche.",
+    "hint": "Commencez par « Je vais changer »."
+  },
+  {
+    "id": "s5",
+    "phase": 2,
+    "topic": "",
+    "speaker": "resident",
+    "by": "Noé · 10 mois",
+    "context": "Après le change, Noé pleure encore. Son doudou est dans son sac.",
+    "scene": "",
+    "prompt": "Comment pouvez-vous le rassurer ?",
+    "sub": "Choisissez la bonne réponse.",
+    "type": "choice",
+    "options": [
+      "Je lui parle doucement et je lui donne son doudou.",
+      "Je crie pour qu'il arrête.",
+      "Je le laisse seul sans vérifier."
+    ],
+    "correct": 0,
+    "explain": "Parler doucement et proposer son doudou peut le calmer.",
+    "hint": "Choisissez une réponse douce."
+  },
+  {
+    "id": "s6",
+    "phase": 2,
+    "topic": "",
+    "speaker": "resident",
+    "by": "Votre collègue",
+    "context": "Noé s'est calmé puis a dormi pendant une heure.",
+    "scene": "",
+    "prompt": "Que pouvez-vous dire à sa maman ?",
+    "sub": "Choisissez la bonne réponse.",
+    "type": "choice",
+    "options": [
+      "Il a dormi une heure.",
+      "Il n'a pas dormi.",
+      "Il a joué une heure."
+    ],
+    "correct": 0,
+    "explain": "« Il a dormi une heure » décrit précisément sa sieste.",
+    "hint": "Parlez du sommeil."
+  },
+  {
+    "id": "s7",
+    "phase": 2,
+    "topic": "",
+    "speaker": "resident",
+    "by": "Votre collègue",
+    "context": "Après la sieste, Noé tousse plusieurs fois.",
+    "scene": "",
+    "prompt": "Quels signes observez-vous ?",
+    "sub": "Choisissez la bonne réponse.",
+    "type": "choice",
+    "options": [
+      "Il chante et il danse.",
+      "Il tousse et il est fatigué.",
+      "Il marche seul."
+    ],
+    "correct": 1,
+    "explain": "« Tousser » = hoesten ; « fatigué » = moe.",
+    "hint": "Deux indices : « tousse » et « fatigué »."
+  },
+  {
+    "id": "s8",
+    "phase": 2,
+    "topic": "",
+    "speaker": "resident",
+    "by": "Votre responsable",
+    "context": "En tant que stagiaire, vous ne décidez pas d'un traitement.",
+    "scene": "",
+    "prompt": "Que répondez-vous ?",
+    "sub": "Choisissez la bonne réponse.",
+    "type": "choice",
+    "options": [
+      "Il a un peu toussé après sa sieste.",
+      "Je lui ai donné un médicament.",
+      "Ce n'est pas important."
+    ],
+    "correct": 0,
+    "explain": "Transmettez des observations simples et exactes à votre responsable.",
+    "hint": "Décrivez ce que vous avez vraiment vu."
+  },
+  {
+    "id": "s9",
+    "phase": 2,
+    "topic": "",
+    "speaker": "resident",
+    "by": "Votre responsable",
+    "context": "Vous préparez les informations pour le départ de Noé.",
+    "scene": "",
+    "prompt": "Quelles informations pouvez-vous transmettre ?",
+    "sub": "Choisissez la bonne réponse.",
+    "type": "choice",
+    "options": [
+      "Il a bu son biberon ce matin, il a dormi une heure et il a toussé après sa sieste.",
+      "Il n'a rien mangé et il n'a jamais dormi.",
+      "Il a été malade toute la journée."
+    ],
+    "correct": 0,
+    "explain": "Un bilan clair décrit les faits sans inventer de diagnostic.",
+    "hint": "Rappelez les informations du jour."
+  }
+];
+const dialogueQuestions = [
+  {
+    "id": "d1",
+    "phase": 3,
+    "topic": "Accueillir",
+    "speaker": "man",
+    "by": "La maman de Mila",
+    "context": "Il est 17 heures. La maman de Mila, deux ans, arrive à la crèche.",
+    "scene": "Bonjour ! Je viens chercher Mila.",
+    "prompt": "Comment répondez-vous ?",
+    "sub": "Deux réponses sont adaptées.",
+    "type": "dialogue",
+    "options": [
+      "Bonjour Madame ! Mila arrive tout de suite.",
+      "Bonjour ! Je vais chercher Mila.",
+      "Dépêchez-vous !"
+    ],
+    "valid": [
+      0,
+      1
+    ],
+    "correct": 0,
+    "replies": [
+      "Merci ! Comment s'est passée sa journée ?",
+      "Merci beaucoup ! Elle a passé une bonne journée ?"
+    ],
+    "wrongReply": "Oh... Je voulais juste savoir comment elle va.",
+    "hint": "Saluez la maman poliment.",
+    "explain": "Les deux premières réponses sont polies."
+  },
+  {
+    "id": "d2",
+    "phase": 3,
+    "topic": "Le repas",
+    "speaker": "man",
+    "by": "La maman de Mila",
+    "context": "La maman veut savoir ce que Mila a mangé. Elle a mangé toute sa purée à midi.",
+    "scene": "Elle a bien mangé à midi ?",
+    "prompt": "Que répondez-vous ?",
+    "sub": "Restez précis et simple.",
+    "type": "choice",
+    "options": [
+      "Oui, elle a mangé toute sa purée.",
+      "Non, elle n'a rien mangé.",
+      "Oui, elle a beaucoup dormi."
+    ],
+    "correct": 0,
+    "hint": "On parle de la purée.",
+    "explain": "Mila a mangé toute sa purée.",
+    "outcome": "La maman sourit : elle aime avoir des nouvelles précises."
+  },
+  {
+    "id": "d3",
+    "phase": 3,
+    "topic": "La sieste",
+    "speaker": "man",
+    "by": "La maman de Mila",
+    "context": "Mila a dormi de 12 h 30 à 14 h, soit une heure et demie.",
+    "scene": "Et elle a dormi ?",
+    "prompt": "Que dites-vous ?",
+    "sub": "Deux réponses correctes. Votre choix change la suite.",
+    "type": "dialogue",
+    "options": [
+      "Oui, elle a dormi une heure et demie.",
+      "Oui, de midi et demi à deux heures.",
+      "Non, elle n'a pas dormi."
+    ],
+    "valid": [
+      0,
+      1
+    ],
+    "correct": 0,
+    "replies": [
+      "Ah, une heure et demie, c'est très bien !",
+      "Merci, c'est précis !"
+    ],
+    "wrongReply": "Ah bon ? Mais on m'a dit qu'elle avait fait la sieste...",
+    "hint": "Elle a dormi 90 minutes.",
+    "explain": "Les deux phrases donnent la même information."
+  },
+  {
+    "id": "d4",
+    "phase": 3,
+    "topic": "Répondre",
+    "speaker": "man",
+    "by": "La maman de Mila",
+    "context": "La maman est contente d'apprendre que Mila a dormi.",
+    "scene": "Merci pour l'information !",
+    "prompt": "Quelle formule est polie ?",
+    "sub": "Choisissez une réponse adaptée.",
+    "type": "dialogue",
+    "options": [
+      "Avec plaisir !",
+      "Je vous en prie !",
+      "Ce n'est pas mon problème."
+    ],
+    "valid": [
+      0,
+      1
+    ],
+    "correct": 0,
+    "replies": [
+      "C'est gentil !",
+      "Merci beaucoup !"
+    ],
+    "wrongReply": "Je voulais simplement vous remercier...",
+    "hint": "On répond poliment à « Merci ».",
+    "explain": "« Avec plaisir » et « Je vous en prie » conviennent."
+  },
+  {
+    "id": "d5",
+    "phase": 3,
+    "topic": "Les émotions",
+    "speaker": "man",
+    "by": "La maman de Mila",
+    "context": "Mila a pleuré quelques minutes ce matin, puis elle a joué avec les autres enfants.",
+    "scene": "Est-ce qu'elle a pleuré ?",
+    "prompt": "Comment décrivez-vous sa journée ?",
+    "sub": "Deux réponses adaptées.",
+    "type": "dialogue",
+    "options": [
+      "Oui, un peu ce matin. Après, elle a joué avec les autres.",
+      "Oui, elle a pleuré quelques minutes, puis elle était contente.",
+      "Non, jamais !"
+    ],
+    "valid": [
+      0,
+      1
+    ],
+    "correct": 0,
+    "replies": [
+      "D'accord, merci pour ces détails.",
+      "Je suis rassurée, merci !"
+    ],
+    "wrongReply": "Vous êtes sûre ? Elle était triste ce matin.",
+    "hint": "Ne cachez pas le moment où elle a pleuré.",
+    "explain": "Dites la vérité et expliquez aussi ce qui s'est bien passé."
+  },
+  {
+    "id": "d6",
+    "phase": 3,
+    "topic": "Rassurer",
+    "speaker": "man",
+    "by": "La maman de Mila",
+    "context": "La maman veut savoir si sa fille est plus calme maintenant.",
+    "scene": "Et maintenant, ça va ?",
+    "prompt": "Comment rassurer sans inventer ?",
+    "sub": "Choisissez une phrase simple et vraie.",
+    "type": "choice",
+    "options": [
+      "Oui, maintenant elle joue et elle sourit.",
+      "Elle ne pleurera plus jamais.",
+      "Je ne sais pas et je m'en fiche."
+    ],
+    "correct": 0,
+    "hint": "Dites ce que vous avez observé.",
+    "explain": "Vous pouvez rassurer en parlant de la situation actuelle.",
+    "outcome": "La maman est contente d'avoir des nouvelles."
+  },
+  {
+    "id": "d7",
+    "phase": 3,
+    "topic": "Les soins",
+    "speaker": "man",
+    "by": "La maman de Mila",
+    "context": "Vous avez remarqué que Mila avait les fesses un peu rouges. Vous en avez parlé à votre responsable.",
+    "scene": "Il y a quelque chose à signaler ?",
+    "prompt": "Que dites-vous ?",
+    "sub": "Ne donnez pas de diagnostic.",
+    "type": "choice",
+    "options": [
+      "Elle avait les fesses un peu rouges. J'en ai parlé à ma responsable.",
+      "C'est certainement une maladie grave.",
+      "Je lui ai donné un médicament."
+    ],
+    "correct": 0,
+    "hint": "Décrivez ce que vous avez vu.",
+    "explain": "Une observation simple est préférable à un diagnostic.",
+    "outcome": "La maman vous remercie de l'avoir signalé."
+  },
+  {
+    "id": "d8",
+    "phase": 3,
+    "topic": "",
+    "speaker": "man",
+    "by": "La maman de Mila",
+    "context": "La maman vous pose une question sur la crème utilisée. Vous ne connaissez pas la réponse.",
+    "scene": "",
+    "prompt": "Construisez une réponse professionnelle.",
+    "sub": "Mettez les groupes de mots dans le bon ordre.",
+    "type": "build",
+    "chunks": [
+      "à ma collègue.",
+      "Je vais demander",
+      "Je sais tout."
+    ],
+    "answer": [
+      "Je vais demander",
+      "à ma collègue."
+    ],
+    "explain": "« Je vais demander à ma collègue » permet de vérifier.",
+    "hint": "Commencez par « Je vais demander »."
+  },
+  {
+    "id": "d9",
+    "phase": 3,
+    "topic": "Dire au revoir",
+    "speaker": "man",
+    "by": "La maman de Mila",
+    "context": "La maman a reçu les informations importantes. Mila est prête à partir.",
+    "scene": "Merci pour votre aide !",
+    "prompt": "Comment terminez-vous la conversation ?",
+    "sub": "Deux réponses conviennent.",
+    "type": "dialogue",
+    "options": [
+      "Avec plaisir, bonne soirée !",
+      "Au revoir Madame, à demain !",
+      "Ne revenez pas !"
+    ],
+    "valid": [
+      0,
+      1
+    ],
+    "correct": 0,
+    "replies": [
+      "Merci, à demain !",
+      "Au revoir et merci !"
+    ],
+    "wrongReply": "Oh... Au revoir.",
+    "hint": "Dites au revoir poliment.",
+    "explain": "Les deux réponses terminent la conversation correctement."
+  }
+];
+const base = baseQuestions.map((q,i)=>({...q,id:'b'+(i+1),phase:1,chapter:q.mission,by:'Noé',speaker:'resident',context:'',outcome:''}));
+const allQuestions=[...base,...storyQuestions,...dialogueQuestions];
+const $=id=>document.getElementById(id);
+const norm=s=>String(s).normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[.!?’,’'\-]/g,' ').replace(/\s+/g,' ').trim();
+const accepted=(q,value)=>q.accepted.some(a=>norm(a)===norm(value));
+let phase=1, round=[],index=0,points=0,phase1Score=0,phase2Score=0,phase3Score=0,attempts=0,answered=false,training=false,hintsUsed=false,mistakes=new Set();
+let dialogueHistory=[],dialogueMood=0,glassesLocation='duree',lastReassurance=0,previewOnly=false;
+let selectedChunks=[];
+function show(section){for(const name of ['welcome','game','transition','transition3','finish'])$(name).classList.toggle('hidden',name!==section);window.scrollTo(0,0);}
+function scoreUpdate(){$('scoreBox').textContent='⭐ '+points+' punten';}
+function updatePhases(){
+ for(let n=1;n<=3;n++){
+  const el=$('phasePill'+n);
+  el.className='phasePill '+(training?'':phase===n?'active':phase>n?'done':'');
+ }
+ $('phasePill1').textContent=training?'🎯 Herhaling':'1 · Woordenschat';
+ $('phasePill2').textContent=training?'Moeilijke':'2 · De bel gaat';
+ $('phasePill3').textContent=training?'vragen':'3 · Het gesprek';
+}
+function resetConversation(){dialogueHistory=[];dialogueMood=0;glassesLocation='duree';lastReassurance=0;}
+function currentScene(q){
+ if(q.id==='d4')return glassesLocation==='horaires'?'Merci ! Elle a donc dormi de midi et demi à deux heures.':'Merci ! Une heure et demie, c’est bien.';
+ if(q.id==='d6')return lastReassurance===1?'Merci. Est-ce qu’elle joue maintenant ?':'Et maintenant, ça va ?';
+ return q.scene;
+}
+function currentContext(q){return q.context||'';}
+function paintHistory(){
+ const panel=$('conversationMemory');panel.replaceChildren();
+ const visible=phase===3&&!training&&dialogueHistory.length>0;
+ panel.classList.toggle('hidden',!visible);
+ if(!visible)return;
+ panel.append(textNode('div','conversationMemoryTitle','💬 Jullie vorige gespreksbeurten'));
+ dialogueHistory.slice(-2).forEach(turn=>{
+  const b=textNode('div','memoryExchange','');
+  b.append(textNode('strong','','JIJ · '+turn.you));
+  b.append(textNode('span','residentAnswer',turn.who+' · '+turn.reply));
+  panel.append(b);
+ });
+}
+function storyReply(q,value,solved=false){
+ if(q.phase!==3)return q.outcome||'';
+ if(q.type==='dialogue'){
+  const chosen=solved?q.correct:value;
+  if(q.id==='d3')glassesLocation=chosen===1?'horaires':'duree';
+  if(q.id==='d5')lastReassurance=chosen;
+  if(q.id==='d1'||q.id==='d5'||q.id==='d6'||q.id==='d9')dialogueMood+=chosen===q.correct?2:1;
+  return q.replies[chosen]||q.replies[q.correct];
+ }
+ return q.outcome||'';
+}
+function recordConversation(q,value,solved=false){
+ const reply=storyReply(q,value,solved);
+ if(q.phase!==3||training||q.type==='choice')return reply;
+ const userAnswer=q.type==='dialogue'?q.options[solved?q.correct:value]:q.type==='choice'?q.options[solved?q.correct:value]:q.type==='build'?q.answer.join(' '):(solved?q.display:String(value));
+ dialogueHistory.push({you:userAnswer,reply,who:q.speaker==='nurse'?'De verpleegkundige':'la maman de Mila'});
+ return reply;
+}
+function start(review=false){
+ training=review;
+ round=review?allQuestions.filter(q=>mistakes.has(q.id)):base.slice();
+ if(!review)mistakes.clear();
+ previewOnly=false;
+ phase=review?0:1; index=0;points=0;phase1Score=0;phase2Score=0;phase3Score=0;resetConversation();
+ if(!round.length){show('welcome');return;}
+ render();show('game');
+}
+function beginStory(){phase=2;round=storyQuestions.slice();index=0;render();show('game');}
+function beginDialogue(){phase=3;round=dialogueQuestions.slice();index=0;resetConversation();render();show('game');}
+function previewDialogue(){previewOnly=true;training=false;mistakes.clear();points=0;phase1Score=0;phase2Score=0;phase3Score=0;beginDialogue();}
+function textNode(tag,cls,value){const el=document.createElement(tag);if(cls)el.className=cls;el.textContent=value;return el;}
+function render(){
+ const q=round[index];if(!q)return;
+ answered=false;attempts=0;hintsUsed=false;selectedChunks=[];
+ scoreUpdate();updatePhases();
+ $('counter').textContent=(index+1)+' / '+round.length;
+ $('mission').textContent=training?'HERHALING · '+q.topic:'MISSIE '+q.phase+' · '+q.topic;
+ $('bar').style.width=(100*index/round.length)+'%';
+ $('speaker').textContent= q.by;
+ $('scene').dataset.speaker=q.speaker||'resident';
+ $('scene').textContent='“'+currentScene(q)+'”';
+ $('prompt').textContent=q.prompt;$('subprompt').textContent=q.sub;
+ $('storyNote').classList.toggle('hidden',q.phase===1);
+ $('storyNote').replaceChildren(textNode('strong','','📍 '+(q.phase===2?'KAMER 12':'KAMER 8')+' · '+(index+1)+' / '+round.length+'  '), document.createTextNode(currentContext(q)));
+ paintHistory();
+ $('hint').classList.add('hidden');$('hint').textContent='';
+ $('feedback').className='feedback';$('feedback').textContent='';
+ $('storyOutcome').textContent='';$('storyOutcome').classList.add('hidden');
+ $('hintBtn').classList.remove('hidden');$('hintBtn').disabled=false;
+ $('revealBtn').classList.remove('hidden');$('skipBtn').classList.remove('hidden');
+ $('nextBtn').classList.add('hidden');
+ $('nextBtn').textContent=training?(index===round.length-1?'Bekijk je herhaling →':'Volgende vraag →'):(index===round.length-1?(phase===1?'Ontgrendel missie 2 →':phase===2?'Ontgrendel missie 3 →':'Bekijk je resultaat →'):'Ga verder →');
+ const area=$('answerArea');area.replaceChildren();
+ if(q.type==='choice'||q.type==='dialogue'){
+  const opts=textNode('div','options','');
+  q.options.forEach((label,i)=>{
+   const b=document.createElement('button');b.className='option';b.type='button';
+   b.append(textNode('span','letter','ABC'[i]||String(i+1)),textNode('span','',label));
+   b.addEventListener('click',()=>check(i));opts.appendChild(b);
+  });area.appendChild(opts);
+ } else if(q.type==='input') {
+  const row=textNode('div','inputRow','');
+  const input=document.createElement('input');input.id='typed';input.type='text';
+  input.className='answerInput';input.placeholder='Typ je Franse antwoord…';
+  input.setAttribute('aria-label','Jouw antwoord');input.setAttribute('aria-describedby','feedback');
+  input.autocomplete='off';input.spellcheck=false;
+  const button=textNode('button','btn purple','Controleer antwoord');button.type='button';
+  const submit=()=>{
+   if(answered)return;
+   const value=input.value.trim();
+   if(!value){feedback(false,'✏️ Typ eerst een antwoord.','Vul een Franse zin in en druk op Controleer antwoord of Enter.');input.focus();return;}
+   check(value);
+  };
+  button.addEventListener('click',submit);
+  input.addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();submit();}});
+  row.append(input,button);area.append(row,textNode('p','typeTip','Je mag hoofdletters en accenten gebruiken, maar dat hoeft niet. Meerdere gebruikelijke formuleringen worden herkend.'));
+ } else if(q.type==='build') {
+  const response=textNode('div','buildResponse','');response.id='buildResponse';response.setAttribute('aria-live','polite');
+  const pool=textNode('div','chipPool','');pool.id='chipPool';
+  q.chunks.forEach((chunk,i)=>{
+   const b=textNode('button','chip',chunk);b.type='button';b.dataset.chunk=String(i);
+   b.addEventListener('click',()=>{if(answered)return;selectedChunks.push(i);paintBuilder();});pool.appendChild(b);
+  });
+  const buttons=textNode('div','builderButtons','');
+  const reset=textNode('button','btn ghost','Wis je zin ↺');reset.type='button';reset.id='resetBuilder';reset.addEventListener('click',()=>{selectedChunks=[];paintBuilder();});
+  const verify=textNode('button','btn purple','Controleer zin');verify.type='button';verify.id='checkBuilder';verify.addEventListener('click',()=>{
+   if(answered)return;
+   if(!selectedChunks.length){feedback(false,'✏️ Bouw eerst een zin.','Klik op de paarse woordgroepen om een Franse zin te maken.');return;}
+   check(selectedChunks.map(i=>q.chunks[i]).join(' '));
+  });
+  buttons.append(reset,verify);area.append(textNode('p','typeTip','Klik op de woordgroepen. Een gekozen woordgroep kun je weer verwijderen.'),response,pool,buttons);
+  paintBuilder();
+ }
+}
+function paintBuilder(){
+ const area=$('buildResponse'),pool=$('chipPool');if(!area||!pool)return;
+ area.replaceChildren();
+ if(!selectedChunks.length)area.appendChild(textNode('span','buildPlaceholder','Jouw zin verschijnt hier...'));
+ selectedChunks.forEach((n,position)=>{
+  const b=textNode('button','chosen',round[index].chunks[n]+' ×');b.type='button';b.title='Verwijder woordgroep';
+  b.addEventListener('click',()=>{if(answered)return;selectedChunks.splice(position,1);paintBuilder();});area.appendChild(b);
+ });
+ pool.querySelectorAll('button').forEach(btn=>btn.disabled=selectedChunks.includes(Number(btn.dataset.chunk))||answered);
+}
+function feedback(good,title,details){
+ const panel=$('feedback');panel.className='feedback '+(good?'good':'bad');
+ panel.replaceChildren(textNode('strong','',title),textNode('span','',details));
+}
+function correctValue(q){return q.type==='choice'||q.type==='dialogue'?q.options[q.correct]:q.type==='build'?q.answer.join(' '):q.display;}
+function updatePhasePoints(earned){if(!training){if(phase===1)phase1Score+=earned;else if(phase===2)phase2Score+=earned;else if(phase===3)phase3Score+=earned;}}
+function hint(q,isAutomatic=false){
+ if(answered)return;
+ $('hint').textContent=(isAutomatic?'🔎 Tip voor je tweede poging: ':'💡 Hint: ')+(q.hint||'Herlees de Franse zin en let op de context.');
+ $('hint').classList.remove('hidden');
+ if(!isAutomatic&&!hintsUsed){
+  hintsUsed=true;
+  const available=training?points:(phase===1?phase1Score:phase===2?phase2Score:phase3Score);
+  const cost=Math.min(2,available);
+  points-=cost;updatePhasePoints(-cost);scoreUpdate();$('hintBtn').disabled=true;
+ }
+ if(isAutomatic)$('hintBtn').disabled=true;
+}
+function complete(q,good,solved=false,value=null){
+ answered=true;
+ $('hintBtn').classList.add('hidden');$('revealBtn').classList.add('hidden');$('skipBtn').classList.add('hidden');
+ $('answerArea').querySelectorAll('button,input').forEach(el=>el.disabled=true);
+ if(q.type==='choice'||q.type==='dialogue'){
+  const b=$('answerArea').querySelectorAll('.option');const chosen=q.type==='dialogue'&&!solved&&q.valid.includes(value)?value:q.correct;if(b[chosen])b[chosen].classList.add('right');
+ }
+ $('bar').style.width=(100*(index+1)/round.length)+'%';
+ $('nextBtn').classList.remove('hidden');
+ if(q.phase===2||q.phase===3){
+  const reply=q.phase===3?recordConversation(q,value,solved):q.outcome;
+  $('storyOutcome').textContent=solved?'💡 Je hebt de oplossing bekeken. '+(q.phase===3&&q.type!=='choice'?'De reactie: '+reply:'Het verhaal kan verder.'):(q.phase===3&&q.type==='choice'?'📖 '+reply:q.phase===3?'💬 '+(q.id==='d7'?'De verpleegkundige':'la maman de Mila')+': '+reply:reply);
+  $('storyOutcome').classList.remove('hidden');
+ }
+ $('nextBtn').focus({preventScroll:true});
+}
+function check(value){
+ if(answered)return;
+ const q=round[index];
+ const good=q.type==='choice'?value===q.correct:q.type==='dialogue'?q.valid.includes(value):q.type==='build'?norm(value)===norm(q.answer.join(' ')):accepted(q,value);
+ if(good){
+  const earned=attempts===0?10:5;
+  points+=earned;updatePhasePoints(earned);scoreUpdate();
+  feedback(true,'✅ Bien joué ! +'+earned+' punten',q.explain);
+  complete(q,true,false,value);return;
+ }
+ attempts++;mistakes.add(q.id);
+ if(q.type==='choice'||q.type==='dialogue'){
+  const b=$('answerArea').querySelectorAll('.option')[value];if(b){b.classList.add('wrong');b.disabled=true;}
+ }
+ if(attempts===1){
+  feedback(false,'🔎 Nog niet helemaal juist.',(q.phase===3&&q.wrongReply?'la maman de Mila: « '+q.wrongReply+' » ':'')+'Je krijgt een hint en een tweede kans.');
+  hint(q,true);
+  if(q.type==='input'){$('typed').focus();$('typed').select();}
+ }else{
+  feedback(false,'💡 Dit is een goed antwoord:',correctValue(q)+' — '+q.explain);
+  complete(q,false,true);
+ }
+}
+function reveal(){if(answered)return;const q=round[index];mistakes.add(q.id);feedback(false,'💡 Oplossing',correctValue(q)+' — '+q.explain);complete(q,false,true);}
+function skip(){if(answered)return;mistakes.add(round[index].id);goNext();}
+function goNext(){
+ if(index<round.length-1){index++;render();return;}
+ if(training){finish();return;}
+ if(phase===2){$('transScore2').textContent='⭐ Missie 2: '+phase2Score+' / '+(storyQuestions.length*10)+' punten';show('transition3');return;}
+ if(phase===1){$('transScore').textContent='⭐ Missie 1: '+phase1Score+' / '+(base.length*10)+' punten';show('transition');}
+ else finish();
+}
+function finish(){
+ show('finish');const total=training?round.length*10:previewOnly?dialogueQuestions.length*10:allQuestions.length*10;
+ $('endPoints').textContent=points;$('endDetails').textContent='van '+total+' punten';
+ const ratio=points/Math.max(1,total);
+ $('endEmoji').textContent=ratio>=.85?'🏆':ratio>=.55?'🎉':'💪';
+ $('endTitle').textContent=training?'Herhaling voltooid!':previewOnly?'Proefmissie voltooid!':ratio>=.85?'Incroyable !':ratio>=.55?'Bravo !':'On continue !';
+ $('endText').textContent=training?'Je hebt je moeilijke woorden en gesprekszinnen opnieuw geoefend.':previewOnly?'Je hebt alleen missie 3 getest. Start de volledige shift om alle drie de missies te spelen.':ratio>=.85?'Je begreep de bewoner uitstekend en reageerde professioneel in het Frans.':ratio>=.55?'Je hielp Noé vooruit en oefende echte stagegesprekken. Bekijk zeker je moeilijke zinnen.':'Je hebt de shift doorlopen. Herhaal de woorden en reacties die nog lastig waren.';
+ const box=$('endBreakdown');box.replaceChildren();
+ if(!training&&!previewOnly){box.append(textNode('span','','📚 Woordenschat: '+phase1Score+' / '+base.length*10),textNode('span','','🔔 De bel gaat: '+phase2Score+' / '+storyQuestions.length*10),textNode('span','','💬 Het gesprek: '+phase3Score+' / '+dialogueQuestions.length*10));}
+ if(previewOnly){box.append(textNode('span','','💬 Het gesprek: '+phase3Score+' / '+dialogueQuestions.length*10));}
+ if(!training){box.append(textNode('p','branchTag',dialogueMood>=6?'👩'la maman de Mila voelde zich gehoord en werd steeds rustiger.':'👩'Je hebt naar la maman de Mila geluisterd en passende reacties geoefend.'));}
+ $('mistakesBtn').classList.toggle('hidden',training||mistakes.size===0);
+}
+$('start').addEventListener('click',()=>start(false));
+$('previewThird').addEventListener('click',previewDialogue);
+$('homeBtn').addEventListener('click',()=>show('welcome'));
+$('continueStory').addEventListener('click',beginStory);
+$('continueDialogue').addEventListener('click',beginDialogue);
+$('nextBtn').addEventListener('click',goNext);
+$('hintBtn').addEventListener('click',()=>hint(round[index],false));
+$('revealBtn').addEventListener('click',reveal);
+$('skipBtn').addEventListener('click',skip);
+$('againBtn').addEventListener('click',()=>start(false));
+$('mistakesBtn').addEventListener('click',()=>start(true));
+
+</script>
+</body>
+</html>
